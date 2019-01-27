@@ -1,2 +1,0 @@
-# EACProy
-Proyecto de EAC
