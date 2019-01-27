@@ -7,3 +7,64 @@ main {
     padding-left: 0;
   }
 }
+
+.logo{
+  width: 100%; 
+  height: auto;
+}
+
+.cian_degrade {
+  transition: background-position 1s ease;
+  background-image: linear-gradient(to right, #00e5ff, #fafafa 65%);
+  background-size: 200% 100%;
+  background-position:right; bottom;
+}
+
+.cian_degrade:hover {
+  background-position: left bottom;
+}
+
+.lime_degrade {
+  transition: background-position 1s ease;
+  background-image: linear-gradient(to right, #eeff41, #fafafa 65%);
+  background-size: 200% 100%;
+  background-position:right; bottom;
+}
+
+.lime_degrade:hover {
+  background-position: left bottom;
+}
+
+.pink_degrade {
+  transition: background-position 1s ease;
+  background-image: linear-gradient(to right, #ff4f89, #fafafa 65%);
+  background-size: 200% 100%;
+  background-position:right; bottom;
+}
+
+.pink_degrade:hover {
+  background-position: left bottom;
+}
+
+.orange_degrade {
+  transition: background-position 1s ease;
+  background-image: linear-gradient(to right, #ffab40, #fafafa 65%);
+  background-size: 200% 100%;
+  background-position:right; bottom;
+}
+
+.orange_degrade:hover {
+  background-position: left bottom;
+}
+
+.black_degrade {
+  transition: background-position 1s ease, color 1s ease;
+  background-image: linear-gradient(to right, #000000, #fafafa 65%);
+  background-size: 200% 100%;
+  background-position:right; bottom;
+}
+
+.black_degrade:hover {
+  background-position: left bottom;
+  color: white;
+}
