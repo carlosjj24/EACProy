@@ -15,9 +15,9 @@ main {
 
 .cian_degrade {
   transition: background-position 1s ease;
-  background-image: linear-gradient(to right, #00e5ff, #fafafa 65%);
+  background-image: linear-gradient(to right, #00e5ff, #fafafa 45%);
   background-size: 200% 100%;
-  background-position:right; bottom;
+  background-position:right bottom;
 }
 
 .cian_degrade:hover {
@@ -26,9 +26,9 @@ main {
 
 .lime_degrade {
   transition: background-position 1s ease;
-  background-image: linear-gradient(to right, #eeff41, #fafafa 65%);
+  background-image: linear-gradient(to right, #eeff41, #fafafa 45%);
   background-size: 200% 100%;
-  background-position:right; bottom;
+  background-position:right bottom;
 }
 
 .lime_degrade:hover {
@@ -37,7 +37,7 @@ main {
 
 .pink_degrade {
   transition: background-position 1s ease;
-  background-image: linear-gradient(to right, #ff4f89, #fafafa 65%);
+  background-image: linear-gradient(to right, #ff4f89, #fafafa 45%);
   background-size: 200% 100%;
   background-position:right; bottom;
 }
@@ -48,9 +48,9 @@ main {
 
 .orange_degrade {
   transition: background-position 1s ease;
-  background-image: linear-gradient(to right, #ffab40, #fafafa 65%);
+  background-image: linear-gradient(to right, #ffab40, #fafafa 45%);
   background-size: 200% 100%;
-  background-position:right; bottom;
+  background-position:right bottom;
 }
 
 .orange_degrade:hover {
@@ -59,12 +59,16 @@ main {
 
 .black_degrade {
   transition: background-position 1s ease, color 1s ease;
-  background-image: linear-gradient(to right, #000000, #fafafa 65%);
+  background-image: linear-gradient(to right, #000000, #fafafa 45%);
   background-size: 200% 100%;
-  background-position:right; bottom;
+  background-position:right bottom;
 }
 
 .black_degrade:hover {
   background-position: left bottom;
   color: white;
+}
+
+.degrade_active {
+  background-position: left bottom;
 }
