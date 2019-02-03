@@ -148,7 +148,7 @@ footer {
 
 .black_degrade {
   transition: background-position 1s ease, color 1s ease;
-  background-image: linear-gradient(to right, #000000, #fafafa 45%);
+  background-image: linear-gradient(to right, #444444, #fafafa 45%);
   background-size: 200% 100%;
   background-position:right bottom;
 }
