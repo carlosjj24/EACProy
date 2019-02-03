@@ -2,6 +2,13 @@ main {
 	padding-left: 300px;
 }
 
+
+footer {
+  position: absolute;
+  padding: 20px;
+  bottom:100px; 
+}
+
 @media only screen and (max-width : 992px) {
    main {
     padding-left: 0;
@@ -12,10 +19,11 @@ main {
   }
 }
 
-footer {
-  position: absolute;
-  padding: 20px;
-  bottom:100px; 
+@media only screen and (max-height : 575px) {
+  footer {
+    position: relative;
+    margin-top: 100px;
+  }
 }
 
 .hidden {
