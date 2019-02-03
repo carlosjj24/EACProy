@@ -1,12 +1,17 @@
+html{
+  font-family: 'Istok Web', sans-serif;
+}
+
 main {
 	padding-left: 300px;
 }
 
 
 footer {
-  position: absolute;
+  position: fixed;
   padding: 20px;
   bottom:100px; 
+  z-index: -1;
 }
 
 @media only screen and (max-width : 992px) {
@@ -16,13 +21,6 @@ footer {
 
   h3 {
     font-size: 26px;
-  }
-}
-
-@media only screen and (max-height : 575px) {
-  footer {
-    position: relative;
-    margin-top: 100px;
   }
 }
 
@@ -36,6 +34,7 @@ footer {
 
 .lessonTitle {
   margin-top: 8vh;
+  font-weight: 500;
 }
 
 .lesson {
