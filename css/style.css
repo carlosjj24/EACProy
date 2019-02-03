@@ -6,6 +6,10 @@ main {
    main {
     padding-left: 0;
   }
+
+  h3 {
+    font-size: 26px;
+  }
 }
 
 footer {
