@@ -2,8 +2,9 @@
 <html>
 	<head>
 		<script type="text/javascript" src="./js/jquery.min.js"></script>
-		<script src="./js/materialize.min.js"></script>
+		<script type="text/javascript" src="./js/materialize.min.js"></script>
 		<script type="text/javascript" src="./js/home_actions.js"></script>
+		<script type="text/javascript" src="./js/general.js"></script>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="./css/materialize.min.css">
 		<link rel="stylesheet" href="./css/style.css">
@@ -26,7 +27,7 @@
 		            		<a class="collapsible-header cian_degrade"><b>Tema 1:</b> Realización de Página Web</a>
 		            		<div class="collapsible-body grey lighten-5" >
 		              			<ul>
-		                			<li><a class="cian_degrade" href="#!"><b>1.1</b> HTML</a></li>
+		                			<li><a class="cian_degrade" href="./leccionHTML.html"><b>1.1</b> HTML</a></li>
 		                			<li><a class="cian_degrade" href="#!"><b>1.2</b> CSS</a></li>
 		                			<li><a class="cian_degrade" href="#!"><b>1.3</b> JavaScript</a></li>
 		                			<li><a class="cian_degrade" href="#!"><b>1.4</b> Bootstrap</a></li>
@@ -69,15 +70,15 @@
 		          		</li>
 		        	</ul>
 		      	</li>
-		      	<footer style="position: absolute; padding: 20px; bottom:100px; "><center><i>©2019 Capote Orianna, Díaz Satoru, Carlos Iglesias.</i></center></footer>
+		      	<footer><center><i>©2019 Capote Orianna, Díaz Satoru, Carlos Iglesias.</i></center></footer>
 			</ul>
-		    <a href="#" data-target="slide-out" class="sidenav-trigger" style="position: fixed; left: 10px; top: 10px; z-index: 10;"><i class="material-icons">menu</i></a>
+		    <a href="#" data-target="slide-out" class="sidenav-trigger menuButton"><i class="material-icons">menu</i></a>
 		</header>
 
 	    <!-- Paralax -->
 	    <main>
 	    	<div class="parallax-container">
-		      	<div class="parallax"><img src="./img/parallax1.jpg" style="width: 150%; height: auto;"></div>
+		      	<div class="parallax"><img src="./img/parallax1.jpg" class="student_image"></div>
 		    </div>
 		    <div class="section white">
 		      	<div class="row container">
@@ -89,11 +90,11 @@
 		      		<div class="col s0 m3">
 				    </div>
 		      		<div class="col s12 m6">
-				      	<div class="card" style="background-image: linear-gradient(to bottom right, #00bcd4, #18ffff);">
+				      	<div class="card inicioClasesCard">
 				        	<div class="card-content white-text">
 				          		<span class="card-title">¡Iniciar Ahora!</span>
 				        	</div>
-				        	<div class="card-action" style="border-top-color: white!important;">
+				        	<div class="card-action inicioClasesCard-action">
 					          	<p><b>Tema 1:</b> Realización de página web <br>
 					          			<b>Seccion 1.1:</b> HTML <br>
 					          			Aprende lo que es un documento HTML, lo que son las etiquetas y como, y cuando, utilizarlas.</p>
@@ -114,14 +115,14 @@
 		      	</div>
 		      	<div class="row container">
 				    <div class="col s12 m6">
-				      	<div class="card" style="background-image: linear-gradient(to bottom right, #00bcd4, #18ffff);">
+				      	<div class="card cardTema1">
 				        	<div class="card-content ">
 				          		<span class="card-title"><b>Tema 1: Realizacion de página web</b></span>
 				        	</div>
 				      	</div>
 				    </div>
 				    <div class="col s12 m6">
-				      	<div class="card" style="background-image: linear-gradient(to bottom left, #d4e157, #eeff41);">
+				      	<div class="card cardTema2">
 				        	<div class="card-content" >
 				          		<span class="card-title"><b>Tema 2: Implementación de Frameworks</b></span>
 				        	</div>
@@ -130,14 +131,14 @@
 		      	</div>
 		      	<div class="row container">
 				    <div class="col s12 m6">
-				      	<div class="card" style="background-image: linear-gradient(to top right, #ff4081, #ff80ab);">
+				      	<div class="card cardTema3">
 				        	<div class="card-content ">
 				          		<span class="card-title"><b>Tema 3: Utilizacion y creación de REST APIs</b></span>
 				        	</div>
 				      	</div>
 				    </div>
 				    <div class="col s12 m6">
-				      	<div class="card" style="background-image: linear-gradient(to top left, #ffa726, #ffab40);">
+				      	<div class="card cardTema4">
 				        	<div class="card-content ">
 				          		<span class="card-title"><b>Tema 4: Entendimiento de Git Flow</b></span>
 				        	</div>
@@ -158,7 +159,7 @@
 		      		<div class="col s0 m3">
 				    </div>
 		      		<div class="col s12 m6">
-				      	<div class="card" style="background-image: linear-gradient(to bottom right, #000000, #ffffff);">
+				      	<div class="card creditosCard">
 				        	<div class="card-content white-text">
 				          		<span class="card-title">Creditos</span>
 				        	</div>
@@ -168,19 +169,10 @@
 				    </div>
 		      	</div>
 		      	<div class="row container">
-		        	<p class="grey-text text-darken-3 lighten-3" style="text-align: left"><center><br><br>© 2019, Capote Orianna, Díaz Satoru, Carlos Iglesias.<center>
+		        	<p class="grey-text text-darken-3 lighten-3 containerFooter"><center><br><br>© 2019, Capote Orianna, Díaz Satoru, Carlos Iglesias.<center>
 </p>				
 		      	</div>
 		    </div>
 	    </main>
-
-	    <script type="text/javascript">
-	    	var collapsibleElem = document.querySelector('.collapsible');
-  			var collapsibleInstance = M.Collapsible.init(collapsibleElem);
-			$(document).ready(function(){
-			    $('.sidenav').sidenav();
-			    $('.parallax').parallax();
-			});
-	    </script>
 	</body>
 </html>

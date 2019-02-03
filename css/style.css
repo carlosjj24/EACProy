@@ -8,6 +8,84 @@ main {
   }
 }
 
+footer {
+  position: absolute;
+  padding: 20px;
+  bottom:100px; 
+}
+
+.hidden {
+  display: none;
+}
+
+.clase {
+  height: 100%;
+}
+
+.lessonTitle {
+  margin-top: 8vh;
+}
+
+.lesson {
+  padding: 30px!important;
+  border-radius: 20px;
+  text-align: justify;
+  width: 100%;
+}
+
+.containerFooter {
+  text-align: left;
+}
+
+.creditosCard {
+  background-image: linear-gradient(to bottom right, #000000, #ffffff);
+}
+
+.cardTema1 {
+  background-image: linear-gradient(to bottom right, #00bcd4, #18ffff);
+}
+
+.cardTema2 {
+  background-image: linear-gradient(to bottom left, #d4e157, #eeff41);
+}
+
+.cardTema3 {
+  background-image: linear-gradient(to top right, #ff4081, #ff80ab);
+}
+
+.cardTema4 {
+  background-image: linear-gradient(to top left, #ffa726, #ffab40);
+}
+
+.inicioClasesCard-action {
+  border-top-color: white!important;
+}
+
+.inicioClasesCard {
+  background-image: linear-gradient(to bottom right, #00bcd4, #18ffff);
+}
+
+.student_image {
+  width: 150%; 
+  height: auto;
+}
+
+.menuButtonLessons {
+  position: fixed; 
+  left: 10px; 
+  top: 10px; 
+  z-index: 10;
+  color: black;
+}
+
+.menuButton {
+  position: fixed; 
+  left: 10px; 
+  top: 10px; 
+  z-index: 10;
+  color: white;
+}
+
 .logo{
   width: 100%; 
   height: auto;
