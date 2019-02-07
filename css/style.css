@@ -1,3 +1,20 @@
+.code {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.coment{
+  color: #8e8e8e;
+}
+
+.reservedWord{
+  color: #ff5400;
+}
+
+.symbol{
+  color: #009187;
+}
+
 html{
   font-family: 'Istok Web', sans-serif;
 }
