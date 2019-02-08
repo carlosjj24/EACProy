@@ -52,7 +52,7 @@ $( document ).ready(function() {
 	$( window ).keyup(function(e) {
 		if (e.which==8) {
 			$(".p"+palabra+"-l"+letra).html("");
-		}else{
+		}else if ((e.which>64 && e.which<91) || (e.which>96 && e.which<123)){
 			$(".p"+palabra+"-l"+letra).html("<center>"+String.fromCharCode(e.which)+"</center>");
 		  	letra ++;
 		  	$(".whiteSquare").removeClass("whiteSquare-active-used");
