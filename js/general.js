@@ -40,6 +40,7 @@ $( document ).ready(function() {
 	    letra = $(this).attr("p"+palabra+"l");
 	    $(".p"+palabra).addClass("whiteSquare-active");
 	    $(this).addClass("whiteSquare-active-used");
+	    $("#teclado").click();
 	});
 
 	$(".blackSquare").on('click', function(){
