@@ -41,6 +41,7 @@ $( document ).ready(function() {
 	    $(".p"+palabra).addClass("whiteSquare-active");
 	    $(this).addClass("whiteSquare-active-used");
 	    $("#teclado").click();
+	    $("#teclado").focus();
 	});
 
 	$(".blackSquare").on('click', function(){
