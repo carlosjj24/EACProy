@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="height: 100%;">
+<html>
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
 		<script type="text/javascript" src="./js/jquery.min.js"></script>
@@ -14,18 +14,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
 
-	<body  class="grey lighten-3" style="height: 100%">
+	<body  class="grey lighten-3">
 		<!-- Left Bar -->
 		<header>
 		   	<ul id="slide-out" class="sidenav sidenav-fixed grey lighten-5">
 		   		<li onclick="redirect('index.html')"><img src="./img/logo.jpg" class="logo"></li>
 		    	<li class="no-padding">
 		        	<ul class="collapsible collapsible-accordion">
-		          		<li>
-		            		<a class="collapsible-header cian_degrade"><b>Tema 1:</b> Realización de Páginas Web</a>
+		          		<li class="active">
+		            		<a class="collapsible-header cian_degrade degrade_active"><b>Tema 1:</b> Realización de Páginas Web</a>
 		            		<div class="collapsible-body grey lighten-5" >
 		              			<ul>
-		                			<li><a class="cian_degrade" href="./HTMLLecciones.html"><b>1.1</b> HTML</a></li>
+		                			<li><a class="cian_degrade degrade_active" href="./HTMLLecciones.html"><b>1.1</b> HTML</a></li>
 		                			<li><a class="cian_degrade" href="./CSSLecciones.html"><b>1.2</b> CSS</a></li>
 		                			<li><a class="cian_degrade" href="./JSLecciones.html"><b>1.3</b> JavaScript</a></li>
 		                			<li><a class="cian_degrade" href="./BootstrapLecciones.html"><b>1.4</b> Bootstrap</a></li>
@@ -33,11 +33,11 @@
 		              			</ul>
 		            		</div>
 		          		</li>
-		          		<li class="active">
-		            		<a class="collapsible-header lime_degrade degrade_active"><b>Tema 2:</b> Frameworks</a>
+		          		<li>
+		            		<a class="collapsible-header lime_degrade"><b>Tema 2:</b> Frameworks</a>
 		            		<div class="collapsible-body grey lighten-5">
 		              			<ul>
-		                			<li><a class="lime_degrade degrade_active" href="./RoRLecciones.html"><b>2.1</b> Ruby on Rails</a></li>
+		                			<li><a class="lime_degrade" href="./RoRLecciones.html"><b>2.1</b> Ruby on Rails</a></li>
 		                			<li><a class="lime_degrade" href="./SailsLecciones.html"><b>2.2</b> Sails.js</a></li>
 		                			<li><a class="lime_degrade" href="./DjangoLecciones.html"><b>2.3</b> Django</a></li>
 		              			</ul>
@@ -74,61 +74,77 @@
 		</header>
 
 	    <!-- Main -->
-	    <main style="height: 100%;">
+	    <main>
 	    	<div class="row">
 	    		<div class="col s12 m12">
-	    			<center><h3 class="lessonTitle">RyR - Leccion 1</h3></center>
+	    			<center><h3 class="lessonTitle">HTML - Leccion 1</h3></center>
 	    		</div>
 	    	</div>
-	    	<div class="row"  style="height: 70%;">
-		      	<div class="col s1 m1"></div>
-		      	<!--clase1 -->
-		      	<div class="col s10 m10 valign-wrapper clase HTMLLeccion1Clase1">
-		      		<div class="card lesson">
-		      			<h5><b>¿Que es?</b></h5>
-			      		<br>
-			      		<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; El Lenguaje de Marcado para Hipertextos, o HyperText Markup Language (HTML) en ingles, es un elemento de contrucion web utilizado para la creacion y representación visual de la misma (Apellido, Fecha)  *Por favor agreguen la bibliografia en los creditos*</p>
-			      		<br>
-			      		<br>
-			      		<div style="float: right;">
-				      		<button  onclick="changeClass('HTMLLeccion1Clase2')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
-							</button>
-						</div>
-		      		</div>
-		      	</div>
-		      	<!--clase2 -->
-		      	<div class="col s10 m10 valign-wrapper clase HTMLLeccion1Clase2 hidden">
-		      		<div class="card lesson">
-		      			<h5><b>Etiquetas</b></h5>
-			      		<br>
-			      		<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; holaaaaaaaaaaaaaaaaaaaaaaaa*</p>
-			      		<br>
-			      		<br>
-			      		<div style="float: left;">
-				      		<button  onclick="changeClass('HTMLLeccion1Clase1')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
-							</button>
-						</div>
-			      		<div style="float: right;">
-				      		<button  onclick="changeClass('HTMLLeccion1Clase3')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
-							</button>
-						</div>
-		      		</div>
-		      	</div>
-		      	<!--clase3 -->
-		      	<div class="col s10 m10 valign-wrapper clase HTMLLeccion1Clase3 hidden">
-		      		<div class="card lesson">
-		      			<center><h3><b>¡Felicitaciones!</b></h3></center>
-			      		<br>
-			      		<center><h5>Has culminado la primera lección de HTML</h5></center>
-			      		<br>
-			      		<br>
-			      		<div style="text-align: right;">
-				      		<a href="./RoRLecciones.html"><button class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>Finalizar </b>
-							</button></a>
-						</div>
-		      		</div>
-		      	</div>
-		      	<div class="col s1 m1"></div>
+	    	<div style="padding: 50px; padding-top: 30px;">
+		    	<div class="row">
+		    		<div class="col s12 m4">
+		    			<div class="card inicioClasesCard" onclick="redirect('leccionHTML.html')">
+				        	<div class="card-content">
+				          		<center><span class="card-title">Lección 1</span></center>
+				        	</div>
+				        	<div class="card-action inicioClasesCard-action">
+					          	<p><b>Introduccion al HTML y su estructura.</b></p>
+					        </div>
+				      	</div>
+		    		</div>
+		    		<div class="col s12 m4">
+		    			<div class="card inicioClasesCard">
+				        	<div class="card-content">
+				          		<center><span class="card-title">Lección 2</span></center>
+				        	</div>
+				        	<div class="card-action inicioClasesCard-action">
+					          	<p><b>Conoce las etiquetas basicas existentes en HTML.</b></p>
+					        </div>
+				      	</div>
+		    		</div>
+		    		<div class="col s12 m4">
+		    			<div class="card inicioClasesCard">
+				        	<div class="card-content">
+				          		<center><span class="card-title">Lección 3</span></center>
+				        	</div>
+				        	<div class="card-action inicioClasesCard-action">
+					          	<p><b>Aprende como realizar un formulario HTML</b></p>
+					        </div>
+				      	</div>
+		    		</div>
+		    	</div>
+		    	<div class="row">
+		    		<div class="col s12 m4">
+		    			<div class="card inicioClasesCard">
+				        	<div class="card-content">
+				          		<center><span class="card-title">Actividad 1</span></center>
+				        	</div>
+				        	<div class="card-action inicioClasesCard-action">
+					          	<p><b>¿Quieres distraerte un rato? realiza un crucigrama.</b></p>
+					        </div>
+				      	</div>
+		    		</div>
+		    		<div class="col s12 m4">
+		    			<div class="card inicioClasesCard">
+				        	<div class="card-content">
+				          		<center><span class="card-title">Actividad 2</span></center>
+				        	</div>
+				        	<div class="card-action inicioClasesCard-action">
+					          	<p><b>¿Por que no te distraes un poco con una sopa de letras?.</b></p>
+					        </div>
+				      	</div>
+		    		</div>
+		    		<div class="col s12 m4">
+		    			<div class="card inicioClasesCard">
+				        	<div class="card-content">
+				          		<center><span class="card-title">Cuestionario</span></center>
+				        	</div>
+				        	<div class="card-action inicioClasesCard-action">
+					          	<p><b>Comprueba por ti mismo cuanto has aprendido.</b></p>
+					        </div>
+				      	</div>
+		    		</div>
+		    	</div>
 		    </div>
 	    </main>
 	</body>

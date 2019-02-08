@@ -13,3 +13,7 @@ function changeClass (name) {
 	$(".clase").addClass("hidden");
 	$("."+name).removeClass("hidden");
 }
+
+function redirect (page) {
+	location.href = page;
+}

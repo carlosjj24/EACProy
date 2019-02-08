@@ -1,3 +1,9 @@
+.item {
+  margin-left: 45px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
 .code {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -71,18 +77,22 @@ footer {
 
 .cardTema1 {
   background-image: linear-gradient(to bottom right, #00bcd4, #18ffff);
+  cursor: pointer;
 }
 
 .cardTema2 {
   background-image: linear-gradient(to bottom left, #d4e157, #eeff41);
+  cursor: pointer;
 }
 
 .cardTema3 {
   background-image: linear-gradient(to top right, #ff4081, #ff80ab);
+  cursor: pointer;
 }
 
 .cardTema4 {
   background-image: linear-gradient(to top left, #ffa726, #ffab40);
+  cursor: pointer;
 }
 
 .inicioClasesCard-action {
@@ -91,6 +101,7 @@ footer {
 
 .inicioClasesCard {
   background-image: linear-gradient(to bottom right, #00bcd4, #18ffff);
+  cursor: pointer;
 }
 
 .student_image {
@@ -117,6 +128,7 @@ footer {
 .logo{
   width: 100%; 
   height: auto;
+  cursor: pointer;
 }
 
 .cian_degrade {
