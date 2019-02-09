@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
+		<script type="text/javascript" src="../../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../../js/materialize.min.js"></script>
+		<script type="text/javascript" src="../../../js/general.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="../../../css/materialize.min.css">
+		<link rel="stylesheet" href="../../../css/style.css">
+		<title> COStudent </title>
+		<link rel="icon" href="../../../img/icono.jpg" type="image/png" size="16x16">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+
+	<body  class="grey lighten-3" style="height: 100%">
+		<!-- Left Bar -->
+		<header>
+		   	<ul id="slide-out" class="sidenav sidenav-fixed grey lighten-5">
+		   		<li onclick="redirect('../../../index.html')"><img src="../../../img/logo.jpg" class="logo"></li>
+		    	<li class="no-padding">
+		        	<ul class="collapsible collapsible-accordion">
+		          		<li class="active">
+		            		<a class="collapsible-header cian_degrade degrade_active"><b>Tema 1:</b> Realización de Páginas Web</a>
+		            		<div class="collapsible-body grey lighten-5" >
+		              			<ul>
+		                			<li><a class="cian_degrade degrade_active" href="./HTMLLecciones.html"><b>1.1</b> HTML</a></li>
+		                			<li><a class="cian_degrade" href="../../../CSSLecciones.html"><b>1.2</b> CSS</a></li>
+		                			<li><a class="cian_degrade" href="../../../JSLecciones.html"><b>1.3</b> JavaScript</a></li>
+		                			<li><a class="cian_degrade" href="../../../BootstrapLecciones.html"><b>1.4</b> Bootstrap</a></li>
+		                			<li><a class="cian_degrade" href="../../../JQLecciones.html"><b>1.5</b> jQuery</a></li>
+		              			</ul>
+		            		</div>
+		          		</li>
+		          		<li>
+		            		<a class="collapsible-header lime_degrade"><b>Tema 2:</b> Frameworks</a>
+		            		<div class="collapsible-body grey lighten-5">
+		              			<ul>
+		                			<li><a class="lime_degrade" href="../../../RoRLecciones.html"><b>2.1</b> Ruby on Rails</a></li>
+		                			<li><a class="lime_degrade" href="../../../SailsLecciones.html"><b>2.2</b> Sails.js</a></li>
+		                			<li><a class="lime_degrade" href="../../../DjangoLecciones.html"><b>2.3</b> Django</a></li>
+		              			</ul>
+		            		</div>
+		          		</li>
+		          		<li>
+		            		<a class="collapsible-header pink_degrade"><b>Tema 3:</b> REST APIs</a>
+		            		<div class="collapsible-body grey lighten-5">
+		              			<ul>
+		                			<li><a class="pink_degrade" href="../../../CreacionLecciones.html"><b>3.1</b> Creación</a></li>
+		                			<li><a class="pink_degrade" href="../../../UtilizacionLecciones.html"><b>3.2</b> Utilización</a></li>
+		              			</ul>
+		            		</div>
+		          		</li>
+		          		<li>
+		            		<a class="collapsible-header orange_degrade"><b>Tema 4:</b> Git Flow</a>
+		            		<div class="collapsible-body grey lighten-5">
+		              			<ul>
+		                			<li><a class="orange_degrade" href="../../../RepoCreLecciones.html"><b>4.1</b> Creación de Repositorio</a></li>
+		                			<li><a class="orange_degrade" href="../../../RepoCloLecciones.html"><b>4.2</b> Clonación de Repositorio</a></li>
+		                			<li><a class="orange_degrade" href="../../../RepoActLecciones.html"><b>4.3</b> Actualización de Repositorio</a></li>
+		                			<li><a class="orange_degrade" href="../../../RepoBranchLecciones.html"><b>4.4</b> Branch</a></li>
+		              			</ul>
+		            		</div>
+		          		</li>
+		          		<li>
+		            		<a class="collapsible-header black_degrade" href="../../../Creditos.html"><b>Créditos</b></a>
+		          		</li>
+		        	</ul>
+		      	</li>
+		      	<footer><center><i>© 2019 Capote Orianna, Díaz Satoru, Iglesias Carlos.</i></center></footer>
+			</ul>
+		    <a href="#" data-target="slide-out" class="sidenav-trigger menuButton"><i class="material-icons">menu</i></a>
+		</header>
+
+	    <!-- Main -->
+	    <main style="height: 100%;">
+	    	<div class="row">
+	    		<div class="col s12 m12">
+	    			<center><h3 class="lessonTitle">HTML - Lección 3</h3></center>
+	    		</div>
+	    	</div>
+	    	<div class="row"  style="height: 70%; position: relative;">
+		      	<div class="col s1 m1"></div>
+		      	<!--clase1 -->
+		      	<div class="col s10 m10 valign-wrapper clase HTMLLeccion1Clase1">
+		      		<div class="card lesson">
+		      			<h5><b>Formularios</b></h5>
+			      		<br>
+			      		<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; En la presente lección explicaremos ccmo obtener información de los usuarios a traves de los formularios HTML.</p>
+			      		<br>
+			      		<br>
+			      		<div style="text-align: right;">
+				      		<button  onclick="changeClass('HTMLLeccion1Clase2')" class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+							</button>
+						</div>
+		      		</div>
+		      	</div>
+		      	<!--clase2 -->
+		      	<div class="col s10 m10 valign-wrapper clase HTMLLeccion1Clase2 hidden">
+		      		<div class="card lesson">
+		      			<h5><b>&lt;form></b></h5>
+			      		<br>
+			      		<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; La etiqueta &lt;form> es la encargada de indicar el inicio, y el fin, de un formulario HTML. Ejemplo:</p>
+			      		<div style="background-color: #fcfcfc; ;border: 1px solid #efefef; padding: 30px; border-radius: 20px;">
+			      			<p class="code"><span class="symbol">&lt;</span><span class="reservedWord">form</span><span class="symbol">></span> <br>
+			      				&nbsp;&nbsp;&nbsp;&nbsp;<span class="coment"> &lt;!-- Contenido del formulario. --><br>
+			      			<span class="symbol">&lt;/</span><span class="reservedWord">form</span><span class="symbol">></span></p>
+			      		</div>
+			      		<br>
+			      		<br>
+						<div style="float: left;">
+				      		<button  onclick="changeClass('HTMLLeccion1Clase1')" class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
+							</button>
+						</div>
+			      		<div style="float: right;">
+				      		<button  onclick="changeClass('HTMLLeccion1Clase3')" class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+							</button>
+						</div>
+		      		</div>
+		      	</div>
+		      	<!--clase3 -->
+		      	<div class="col s10 m10 valign-wrapper clase HTMLLeccion1Clase3 hidden">
+		      		<div class="card lesson">
+		      			<h5><b>&lt;input></b></h5>
+			      		<br>
+			      		<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; La etiqueta input indica un campo de entrada a traves del cual el usuario puede introducir datos. </p>
+			      		<div style="background-color: #fcfcfc; ;border: 1px solid #efefef; padding: 30px; border-radius: 20px;">
+			      			<p class="code"><span class="symbol">&lt;</span><span class="reservedWord">input</span><span class="symbol"> type</span>=<span class="string">"<b><i>tipo</i></b>"</span><span class="symbol"> name</span>=<span class="string">"<i><b>nombre</b></i>"</span><span class="symbol"> value</span>=<span class="string">"<i><b>valor</b></i>"</span><span class="symbol">></span></p>
+			      		</div>
+			      		<br>
+			      		<p class="item"><b>* type:</b> como su nombre lo indica, define el tipo de input. Segun su valor puede cambiar el comportamiento del elemento HTML.</p>
+			      		<p class="item"><b>* name:</b> indica el nombre del elemento HTML.</p>
+			      		<p class="item"><b>* value:</b> indica el valor del campo.</p>
+			      		<br>
+			      		<br>
+						<div style="float: left;">
+				      		<button  onclick="changeClass('HTMLLeccion1Clase2')" class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
+							</button>
+						</div>
+			      		<div style="float: right;">
+				      		<button  onclick="changeClass('HTMLLeccion1Clase4')" class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+							</button>
+						</div>
+		      		</div>
+		      	</div>
+		      	<!--clase4 -->
+		      	<div class="col s10 m10 valign-wrapper clase HTMLLeccion1Clase4 hidden">
+		      		<div class="card lesson">
+		      			<h5><b>&lt;input>: Tipos</b></h5>
+			      		<br>
+			      		<center>
+                            <iframe width="420" height="300" src="https://www.youtube.com/embed/EY-Ye31sOvM"></iframe>
+                        </center>
+			      		<br>
+			      		<br>
+						<div style="float: left;">
+				      		<button  onclick="changeClass('HTMLLeccion1Clase3')" class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
+							</button>
+						</div>
+			      		<div style="float: right;">
+				      		<button  onclick="changeClass('HTMLLeccion1Clase5')" class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+							</button>
+						</div>
+		      		</div>
+		      	</div>
+		      	<!--clase5 -->
+		      	<div class="col s10 m10 valign-wrapper clase HTMLLeccion1Clase5 hidden">
+		      		<div class="card lesson">
+		      			<h5><b>&lt;select></b></h5>
+			      		<br>
+			      		<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; La etiqueta &lt;select> es utilizada para la creación de una lista desplegable. Ejemplo: </p>
+			      		<div style="background-color: #fcfcfc; ;border: 1px solid #efefef; padding: 30px; border-radius: 20px;">
+			      			<p class="code"><span class="symbol">&lt;</span><span class="reservedWord">select</span><span class="symbol">></span></p>
+			      				<p class="code">&nbsp;&nbsp;&nbsp;&nbsp;<span class="symbol">&lt;</span><span class="reservedWord">option</span><span class="symbol"> value</span>=<span class="string">"<b><i>valor</i></b>"</span><span class="symbol">></span><spam class="code coment"> &lt;!-- Nombre de la opción --> </spam><span class="symbol">&lt;/</span><span class="reservedWord">option</span><span class="symbol">></span></p>
+			      			<p class="code"><span class="symbol">&lt;/</span><span class="reservedWord">select</span><span class="symbol">></span></p>
+			      		</div>
+			      		<br>
+			      		<br>
+			      		<br>
+						<div style="float: left;">
+				      		<button  onclick="changeClass('HTMLLeccion1Clase4')" class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
+							</button>
+						</div>
+			      		<div style="float: right;">
+				      		<button  onclick="changeClass('HTMLLeccion1Clase6')" class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+							</button>
+						</div>
+		      		</div>
+		      	</div>
+		      	<!--clase6 -->
+		      	<div class="col s10 m10 valign-wrapper clase HTMLLeccion1Clase6 hidden">
+		      		<div class="card lesson">
+		      			<h5><b>&lt;textarea></b></h5>
+			      		<br>
+			      		<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; El textarea define una entrada de texto de multiples lineas. Su funcionamiento es basicamente igual al de un input de tipo text. Ejemplo de implementación: </p>
+			      		<div style="background-color: #fcfcfc; ;border: 1px solid #efefef; padding: 30px; border-radius: 20px;">
+			      			<p class="code"><span class="symbol">&lt;</span><span class="reservedWord">textarea</span><span class="symbol">></span></p>
+			      				<p class="code coment">&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Valor por Defecto --></spam></p>
+			      			<p class="code"><span class="symbol">&lt;/</span><span class="reservedWord">textarea</span><span class="symbol">></span></p>
+			      		</div>
+			      		<br>
+			      		<br>
+			      		<br>
+						<div style="float: left;">
+				      		<button  onclick="changeClass('HTMLLeccion1Clase5')" class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
+							</button>
+						</div>
+			      		<div style="float: right;">
+				      		<button  onclick="changeClass('HTMLLeccion1Clase7')" class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+							</button>
+						</div>
+		      		</div>
+		      	</div>
+		      	<!--clase-->
+		      	<div class="col s10 m10 valign-wrapper clase HTMLLeccion1Clase7 hidden">
+		      		<div class="card lesson">
+		      			<center><h3><b>¡Felicitaciones!</b></h3></center>
+			      		<br>
+			      		<center><h5>Has culminado la tercera lección de HTML</h5></center>
+			      		<br>
+			      		<br>
+			      		<div style="text-align: right;">
+				      		<a href="./HTMLLecciones.html"><button class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>Finalizar </b>
+							</button></a>
+						</div>
+		      		</div>
+		      	</div>
+		      	<div class="col s1 m1"></div>
+		    </div>
+	    </main>
+	</body>
+</html>
