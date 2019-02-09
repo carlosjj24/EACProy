@@ -99,7 +99,9 @@
 				      						<td class="blackSquare">
 				      							
 				      						</td>
-				      						<td class="whiteSquare p1 p1-l1" pp="1" p="#1#" p1l="1">
+				      						<td class="whiteSquare p1" pp="1" p="#1#" p1l="1" style="position: relative;">
+				      							<p class="cruci-numero">1</p>
+				      							<span class="p1-l1"></span>
 				      						</td>
 				      						<td class="blackSquare">
 				      							
@@ -128,8 +130,9 @@
 				      					</tr>
 
 				      					<tr>
-				      						<td class="whiteSquare p2 p2-l1" pp="2" p="#2#" p2l="1">
-				      							
+				      						<td class="whiteSquare p2" pp="2" p="#2#" p2l="1" style="position: relative;">
+				      							<p class="cruci-numero">2</p>
+				      							<span class="p2-l1"></span>
 				      						</td>
 				      						<td class="blackSquare">
 				      							
@@ -200,8 +203,9 @@
 				      					</tr>
 
 				      					<tr>
-				      						<td class="whiteSquare p2 p2-l3 p3 p3-l1" pp="3" p="#2#3#" p2l="3" p3l="1">
-				      							
+				      						<td class="whiteSquare p2 p3" pp="3" p="#2#3#" p2l="3" p3l="1" style="position: relative">
+				      							<p class="cruci-numero">3</p>
+				      							<span class="p3-l1 p2-l3"></span>
 				      						</td>
 				      						<td class="whiteSquare p3 p3-l2" pp="3" p="#3#" p3l="2">
 				      							
@@ -224,8 +228,9 @@
 				      						<td class="blackSquare">
 				      							
 				      						</td>
-				      						<td class="whiteSquare p4 p4-l1" pp="4" p="#4#" p4l="1">
-				      							
+				      						<td class="whiteSquare p4" pp="4" p="#4#" p4l="1" style="position: relative;">
+				      							<p  class="cruci-numero">4</p>
+				      							<span class="p4-l1"></span>
 				      						</td>
 				      						<td class="blackSquare">
 				      							
@@ -272,14 +277,16 @@
 				      					</tr>
 
 				      					<tr>
-				      						<td class="whiteSquare p2 p2-l5 p5 p5-l1" pp="5" p="#2#5#" p2l="5" p5l="1">
-				      							
+				      						<td class="whiteSquare p2 p5" pp="5" p="#2#5#" p2l="5" p5l="1" style="position: relative;">
+				      							<p class="cruci-numero">5</p>
+				      							<span class="p5-l1 p2-l5"></span>
 				      						</td>
 				      						<td class="whiteSquare p5 p5-l2" pp="5" p="#5#" p5l="2">
 				      							
 				      						</td>
-				      						<td class="whiteSquare p5 p5-l3 p6 p6-l1" pp="6" p="#5#6#" p5l="3" p6l="1">
-				      							
+				      						<td class="whiteSquare p5 p6" pp="6" p="#5#6#" p5l="3" p6l="1" style="position: relative;">
+				      							<p class="cruci-numero">6</p>
+				      							<span class="p6-l1 p5-l3"></span>
 				      						</td>
 				      						<td class="whiteSquare p5 p5-l4" pp="5" p="#5#" p5l="4">
 				      							
@@ -476,8 +483,9 @@
 				      						<td class="blackSquare">
 				      							
 				      						</td>
-				      						<td class="whiteSquare p7 p7-l1 p4 p4-l8" pp="7"  p="#7#4#" p7l="1" p4l="8">
-				      							
+				      						<td class="whiteSquare p7 p4" pp="7"  p="#7#4#" p7l="1" p4l="8" style="position: relative;">
+				      							<p class="cruci-numero">7</p>
+				      							<span class="p7-l1 p4-l8"></span>
 				      						</td>
 				      						<td class="whiteSquare p7 p7-l2" pp="7" p="#7#" p7l="2">
 				      							
@@ -489,19 +497,44 @@
 				      				</tbody>
 				      			</table>
 				      		</div>
+				      		<div class="col s12 m5">
+				      			<b>Horizontal:</b>
+				      			<p class="item"><b>3.</b> Nombre de la etiqueta utilizada para definir el cuerpo de una pagina web.</p>
+				      			<p class="item"><b>5.</b> Las páginas HTML estan formadas por _________.</p>
+				      			<p class="item"><b>7.</b> Nombre de la etiqueta utilizada para la separación de contenido.</p>
+				      			<b>Vertical:</b>
+				      			<p class="item"><b>1.</b> Nombre de la etiqueta utilizada para definir la metadata de la página.</p>
+				      			<p class="item"><b>2.</b> Nombre de la etiqueta utilizada para la creación de tablas.</p>
+				      			<p class="item"><b>4.</b> Tipo de input utilizado para ocultar el contenido del mismo.</p>
+				      			<p class="item"><b>6.</b> Nombre de la etiqueta utilizada para agregar imagenes a la página.</p>
+				      		</div>
 				      	</div>
 			      		<div style="float: right;">
-				      		<button  onclick="changeClass('HTMLLeccion1Clase5')" class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+				      		<button  onclick="verificarCruci()" class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>Verificar Respuestas > </b>
 							</button>
 						</div>
 		      		</div>
 		      	</div>
-		      	<!--clase4 -->
-		      	<div class="col s10 m10 valign-wrapper clase HTMLLeccion1Clase5 hidden">
+		      	<!--Solucion Correcta -->
+		      	<div class="col s10 m10 valign-wrapper clase HTMLActividadAprobado hidden">
 		      		<div class="card lesson">
 		      			<center><h3><b>¡Felicitaciones!</b></h3></center>
 			      		<br>
-			      		<center><h5>Has culminado la primera lección de HTML</h5></center>
+			      		<center><h5>Completaste correctamente el crucigrama.</h5></center>
+			      		<br>
+			      		<br>
+			      		<div style="text-align: right;">
+				      		<a href="./HTMLLecciones.html"><button class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>Finalizar </b>
+							</button></a>
+						</div>
+		      		</div>
+		      	</div>
+		      	<!--Solucion incorrecta -->
+		      	<div class="col s10 m10 valign-wrapper clase HTMLActividadReprobado hidden">
+		      		<div class="card lesson">
+		      			<center><h3><b>¡Lo sentimos!</b></h3></center>
+			      		<br>
+			      		<center><h5>No has completado el crucigrama correctamente. Te recomendamos retomar las lecciones anteriores.</h5></center>
 			      		<br>
 			      		<br>
 			      		<div style="text-align: right;">

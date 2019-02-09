@@ -226,3 +226,41 @@ footer {
   padding: 0px!important;
   font-size: 10px;
 }
+
+.cruci-numero {
+  position: absolute;
+  top: 0;
+  color: #777777;
+}
+
+.string {
+  color: #5e5e5e;
+}
+
+.videosPart1 {
+  width: 80%;
+}
+
+[type="radio"].lime:checked+span:after{
+    background-color: #d4e157!important;
+}
+
+[type="radio"].lime:checked+span:after{
+    border: 2px solid #d4e157!important;
+}
+
+[type="radio"].pink:checked+span:after{
+    background-color: #ff4081!important;
+}
+
+[type="radio"].pink:checked+span:after{
+    border: 2px solid #ff4081!important;
+}
+
+[type="radio"].orange:checked+span:after{
+    background-color: #ffa726!important;
+}
+
+[type="radio"].orange:checked+span:after{
+    border: 2px solid #ffa726!important;
+}
