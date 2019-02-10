@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="height: 100%;">
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
 		<script type="text/javascript" src="../../../js/jquery.min.js"></script>
@@ -14,7 +14,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
 
-	<body  class="grey lighten-3">
+	<body  class="grey lighten-3" style="height: 100%">
 		<!-- Left Bar -->
 		<header>
 		   	<ul id="slide-out" class="sidenav sidenav-fixed grey lighten-5">
@@ -72,77 +72,85 @@
 		</header>
 
 	    <!-- Main -->
-	    <main>
+	    <main style="height: 100%;">
 	    	<div class="row">
 	    		<div class="col s12 m12">
-	    			<center><h3 class="lessonTitle">css</h3></center>
+	    			<center><h3 class="lessonTitle">CSS - Lección 3</h3></center>
 	    		</div>
 	    	</div>
-	    	<div style="padding: 50px; padding-top: 30px;">
-		    	<div class="row">
-		    		<div class="col s12 m4">
-		    			<div class="card inicioClasesCard" onclick="redirect('leccion1.html')">
-				        	<div class="card-content">
-				          		<center><span class="card-title">Lección 1</span></center>
-				        	</div>
-				        	<div class="card-action inicioClasesCard-action">
-					          	<p><b>Introducción a CSS.</b></p>
-					        </div>
-				      	</div>
-		    		</div>
-		    		<div class="col s12 m4">
-		    			<div class="card inicioClasesCard" onclick="redirect('leccion2.html')">
-				        	<div class="card-content">
-				          		<center><span class="card-title">Lección 2</span></center>
-				        	</div>
-				        	<div class="card-action inicioClasesCard-action">
-					          	<p><b>Modificación de letras a traves de CSS.</b></p>
-					        </div>
-				      	</div>
-		    		</div>
-		    		<div class="col s12 m4">
-		    			<div class="card inicioClasesCard" onclick="redirect('leccionHTML3.html')">
-				        	<div class="card-content">
-				          		<center><span class="card-title">Lección 3</span></center>
-				        	</div>
-				        	<div class="card-action inicioClasesCard-action">
-					          	<p><b>Modificaciones generales a traves de CSS.</b></p>
-					        </div>
-				      	</div>
-		    		</div>
-		    	</div>
-		    	<div class="row">
-		    		<div class="col s12 m4">
-		    			<div class="card inicioClasesCard" onclick="redirect('leccionHTML4.html')">
-				        	<div class="card-content">
-				          		<center><span class="card-title">Lección 3</span></center>
-				        	</div>
-				        	<div class="card-action inicioClasesCard-action">
-					          	<p><b>Aprende como realizar un formulario HTML.</b></p>
-					        </div>
-				      	</div>
-		    		</div>
-		    		<div class="col s12 m4">
-		    			<div class="card inicioClasesCard" onclick="redirect('leccionHTMLActividad.html')">
-				        	<div class="card-content">
-				          		<center><span class="card-title">Actividad</span></center>
-				        	</div>
-				        	<div class="card-action inicioClasesCard-action">
-					          	<p><b>¿Quieres distraerte un rato? realiza un crucigrama.</b></p>
-					        </div>
-				      	</div>
-		    		</div>
-		    		<div class="col s12 m4">
-		    			<div class="card inicioClasesCard" onclick="redirect('leccionHTMLCuestionario.html')">
-				        	<div class="card-content">
-				          		<center><span class="card-title">Cuestionario</span></center>
-				        	</div>
-				        	<div class="card-action inicioClasesCard-action">
-					          	<p><b>Comprueba por ti mismo cuanto has aprendido.</b></p>
-					        </div>
-				      	</div>
-		    		</div>
-		    	</div>
+	    	<div class="row"  style="height: 70%;">
+		      	<div class="col s1 m1"></div>
+		      	<!--clase1 -->
+		      	<div class="col s10 m10 valign-wrapper clase HTMLLeccion1Clase1">
+		      		<div class="card lesson">
+		      			<h5><b>Modificación de estilo en general</b></h5>
+			      		<br>
+			      		<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A continuación te enseñaremos lo necesario para modificar el estilo de la página web en general. </p>
+			      		<br>
+			      		<br>
+			      		<div style="text-align: right;">
+				      		<button  onclick="changeClass('HTMLLeccion1Clase2')" class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+							</button>
+						</div>
+		      		</div>
+		      	</div>
+		      	<!--clase2 -->
+		      	<div class="col s10 m10 valign-wrapper clase HTMLLeccion1Clase2 hidden">
+		      		<div class="card lesson">
+		      			<h5><b>Propiedades</b></h5>
+			      		<br>
+			      		<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Entre algunas de las propiedades que permiten el cambio de estilo de los elementos de la página web se encuentra:</p>
+			      		<p class="item"><b>* background-color:</b> indica el color del fondo.</p>
+			      		<p class="item"><b>* background-image:</b> indica la imagen de fondo</p>
+			      		<p class="item"><b>* width:</b> indica el ancho del elemento.</p>
+			      		<p class="item"><b>* heigth:</b> indica el alto del elemento.</p>
+			      		<p class="item"><b>* padding:</b> es utilizado para generar espacio al rededor de un objeto contenido en cualquier borde definido.</p>
+			      		<p class="item"><b>* margin:</b> es utilizado para generar espacio al rededor de un objeto fuera de cualquier borde definido. </p>
+			      		<br>
+			      		<br>
+						<div style="float: left;">
+				      		<button  onclick="changeClass('HTMLLeccion1Clase1')" class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
+							</button>
+						</div>
+			      		<div style="float: right;">
+				      		<button  onclick="changeClass('HTMLLeccion1Clase3')" class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+							</button>
+						</div>
+		      		</div>
+		      	</div>
+		      	<!--clase3 -->
+		      	<div class="col s10 m10 valign-wrapper clase HTMLLeccion1Clase3 hidden">
+		      		<div class="card lesson">
+		      			<h5><b>Ejemplo</b></h5>
+			      		<br>
+			      		<center><iframe width="420" height="300" src="https://www.youtube.com/embed/maHYUmtnals"></iframe></center>
+			      		<br>
+			      		<br>
+						<div style="float: left;">
+				      		<button  onclick="changeClass('HTMLLeccion1Clase2')" class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
+							</button>
+						</div>
+			      		<div style="float: right;">
+				      		<button  onclick="changeClass('HTMLLeccion1Clase4')" class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+							</button>
+						</div>
+		      		</div>
+		      	</div>
+		      	<!--clase4 -->
+		      	<div class="col s10 m10 valign-wrapper clase HTMLLeccion1Clase4 hidden">
+		      		<div class="card lesson">
+		      			<center><h3><b>¡Felicitaciones!</b></h3></center>
+			      		<br>
+			      		<center><h5>Has culminado la segunda lección de CSS</h5></center>
+			      		<br>
+			      		<br>
+			      		<div style="text-align: right;">
+				      		<a href="./Lecciones.html"><button class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>Finalizar </b>
+							</button></a>
+						</div>
+		      		</div>
+		      	</div>
+		      	<div class="col s1 m1"></div>
 		    </div>
 	    </main>
 	</body>
