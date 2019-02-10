@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
+		<script type="text/javascript" src="../../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../../js/materialize.min.js"></script>
+		<script type="text/javascript" src="../../../js/general.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="../../../css/materialize.min.css">
+		<link rel="stylesheet" href="../../../css/style.css">
+		<title> COStudent </title>
+		<link rel="icon" href="../../../img/icono.jpg" type="image/png" size="16x16">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+
+	<body  class="grey lighten-3">
+		<!-- Left Bar -->
+		<header>
+		   	<ul id="slide-out" class="sidenav sidenav-fixed grey lighten-5">
+		   		<li onclick="redirect('../../../index.html')"><img src="../../../img/logo.jpg" class="logo"></li>
+		    	<li class="no-padding">
+		        	<ul class="collapsible collapsible-accordion">
+		          		<li>
+		            		<a class="collapsible-header cian_degrade"><b>Tema 1:</b> Realización de Páginas Web</a>
+		            		<div class="collapsible-body grey lighten-5" >
+		              			<ul>
+		                			<li><a class="cian_degrade" href="../../Realizacion_paginas_web/HTML/HTMLLecciones.html"><b>1.1</b> HTML</a></li>
+		                			<li><a class="cian_degrade" href="../../Realizacion_paginas_web/CSS/Lecciones.html"><b>1.2</b> CSS</a></li>
+		                			<li><a class="cian_degrade" href="../../Realizacion_paginas_web/JS/Lecciones.html"><b>1.3</b> JavaScript</a></li>
+		              			</ul>
+		            		</div>
+		          		</li>
+		          		<li class="active" >
+		            		<a class="collapsible-header lime_degrade degrade_active"><b>Tema 2:</b> Frameworks</a>
+		            		<div class="collapsible-body grey lighten-5">
+		              			<ul>
+		                			<li><a class="lime_degrade " href="../RubyonRails/MenuLecciones.html"><b>2.1</b> Ruby on Rails</a></li>
+		                			<li><a class="lime_degrade degrade_active" href="./MenuLecciones.html"><b>2.2</b> AngularJS</a></li>		                			
+		              			</ul>
+		            		</div>
+		          		</li>
+		          		<li >
+		            		<a class="collapsible-header pink_degrade"><b>Tema 3:</b> REST APIs</a>
+		            		<div class="collapsible-body grey lighten-5">
+		              			<ul>
+		                			<li><a class="pink_degrade" href="../../REST_APIs/Creacion/MenuLecciones.html"><b>3.1</b> Creación</a></li>
+		                			<li><a class="pink_degrade" href="../../REST_APIs/Utilizacion/MenuLecciones.html"><b>3.2</b> Utilización</a></li>
+		              			</ul>
+		            		</div>
+		          		</li>
+		          		<li>
+		            		<a class="collapsible-header orange_degrade"><b>Tema 4:</b> Git y Git Flow</a>
+		            		<div class="collapsible-body grey lighten-5">
+		              			<ul>
+									<li><a class="orange_degrade" href="../../Git_y_Git_Flow/Introduccion_a_Git/MenuLecciones.html"><b>4.1</b> Introducción a Git</a></li>
+									<li><a class="orange_degrade" href="../../Git_y_Git_Flow/Git_Flow/MenuLecciones.html"><b>4.2</b> Git Flow</a></li>
+		              			</ul>
+		            		</div>
+		          		</li>
+		          		<li>
+											<a class="collapsible-header black_degrade" href="../../../Creditos.html"><b>Créditos</b></a>
+										</li>
+		        	</ul>
+		      	</li>
+		      	<footer><center><i>© 2019 Capote Orianna, Díaz Satoru, Iglesias Carlos.</i></center></footer>
+			</ul>
+		    <a href="#" data-target="slide-out" class="sidenav-trigger menuButton"><i class="material-icons">menu</i></a>
+		</header>
+
+	    <!-- Main -->
+	    <main style="height: 100%;">
+	    	<div class="row">
+	    		<div class="col s12 m12">
+	    			<center><h3 class="lessonTitle">Directivas en AngularJS - Lección 2</h3></center>
+	    		</div>
+	    	</div>
+	    	<div class="row"  style="height: 70%;">
+		      	<div class="col s1 m1"></div>
+		      	<!--clase1 -->
+		      	<div class="col s10 m10 valign-wrapper clase HTMLLeccion2Clase1">
+		      		<div class="card lesson">
+		      			<h5><b>Data Binding en AngularJS</b></h5>
+								<br>
+								<center><img src="../../../img/angularjs.jpg" style="width: 40%"></center> 
+			      		<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; La imagen anterior hace referencia a la descripción general del data binding en AngularJS, en la misma se observan tres columnas las cuales representan: </p>
+								<div style="margin-left : 50px">
+										<ul>
+											<li style="list-style-type: disc"> <p> HTML: Es la parte declarativa, con las vistas, así como las directivas y filtros que nos provee AngularJS, así como los que hagamos nosotros mismos o terceros desarrolladores. </p> </li>
+											<li style="list-style-type: disc"> <p> JS (Javascript): Que serán los controladores, factorías y servicios. </p></li>
+											<li style="list-style-type: disc"> <p>	$scope: es un objeto Javascript del cual se puede utilizar creando propiedades que pueden ser datos o funciones. Sirve para comunicar desde la vista con el controlador y viceversa, es decir AngularJS esta al pendiente de los cambios ue ocurran en la(s) variables que contengan el prefijo "$scope" para actualizar la vista cuando la actualizacion provenga del controlador y viceversa. </p></li>											
+										</ul>
+									</div>
+								<br>
+			      		<br>
+			      		<div style="text-align: right;">
+				      		<button  onclick="changeClass('HTMLLeccion2Clase2')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+							</button>
+						</div>
+		      		</div>
+				</div>
+				
+				<!--clase2 -->
+				<div class="col s10 m10 valign-wrapper clase HTMLLeccion2Clase2 hidden">
+						<div class="card lesson">
+							<h5><b>¿Que es una directiva?</b></h5>
+							<br>								
+								<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Las directivas son marcas en los elementos del árbol DOM, en los nodos del HTML, que indican al compilador de Angular que debe asignar cierto comportamiento a dichos elementos o transformarlos según corresponda </p>
+								<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Podríamos decir que las directivas nos permiten añadir comportamiento dinámico al árbol DOM haciendo uso de las nativas del propio AngularJS o extender la funcionalidad hasta donde necesitemos creando las nuestras propias. De hecho, la recomendación, es que sea en las directivas en el único sitio donde manipulemos el árbol DOM, para que entre dentro del ciclo de vida de compilación, binding y renderización del HTML. </p>
+								<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Las directivas son la técnica que nos va a permitir crear nuestros propios componentes visuales encapsulando las posibles complejidades en la implementación, normalizando y parametrizándolos según nuestras necesidades. En resumen, Las directivas en AngularJS permite la manipulación y reutilización de código HTML. </p>								
+							<br>
+							<br>
+						  <div style="float: left;">
+								<button  onclick="changeClass('HTMLLeccion2Clase1')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
+							  </button>
+						  </div>
+							<div style="float: right;">
+								<button  onclick="changeClass('HTMLLeccion2Clase3')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+							  </button>
+						  </div>
+						</div>
+					</div>
+				
+		      	<!--clase3 -->
+		      	<div class="col s10 m10 valign-wrapper clase HTMLLeccion2Clase3 hidden">
+		      		<div class="card lesson">
+		      		<h5><b> Tipos de directivas </b></h5>
+			      	<br>													
+							<p>&nbsp;&nbsp;&nbsp; Existen dos tipologias de directivas: </p>										
+							<div style="margin-left : 50px">
+									<ul>
+										<li style="list-style-type: disc"> <p>	La primera tipología de directivas son las nativas, que hacen mencion a las propias directivas desarrolladas por el stack de desarrolladores de AngularJS. </p> </li>
+										<li style="list-style-type: disc"> <p>	La segunda tipología que podemos encontrar en las directivas es su ámbito de aplicación a los nodos del árbol DOM, de modo tal que se pueden asociar, es decir: </p></li>										
+										<div style="margin-left : 50px">
+												<ul>
+													<li style="list-style-type: disc"> <p>	Mediante la declaración de un atributo ‘A’ en cualquier elemento del DOM. Ejemplo : < div customize-it> </ div > </p> </li>
+													<li style="list-style-type: disc"> <p>	Mediante la declaración de un clase css ‘C’ en cualquier atributo de tipo class de un elemento del DOM. Ejemplo: < div class="customize-it"></ div></ p></li>										
+													<li style="list-style-type: disc"> <p>	Mediante la asignación a un comentario ‘M’ en cualquier bloque de código comentado. Ejemplo: 	< ! -- directive: customize-it --> </p> </li>
+													<li style="list-style-type: disc"> <p>	Mediante la declaración de un elemento ‘E’ del propio árbol DOM. Ejemplo: < customize-it></ customize-it> </p> </li>
+													<li style="list-style-type: disc"> <p>	También se pueden combinar las declaraciones. </p> </li>
+												</ul>
+											</div>
+									</ul>
+								</div>						
+			      		<br>
+			      		<br>
+						<div style="float: left;">
+				      		<button  onclick="changeClass('HTMLLeccion2Clase2')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
+							</button>
+						</div>
+			      		<div style="float: right;">
+				      		<button  onclick="changeClass('HTMLLeccion2Clase4')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+							</button>
+						</div>
+		      		</div>
+		      	</div>
+				  <!--clase4 -->
+				  <div class="col s10 m10 valign-wrapper clase HTMLLeccion2Clase4 hidden">
+						<div class="card lesson">
+							<h5><b>Directivas Nativas</b></h5>
+							<br>
+								<p>&nbsp;&nbsp;&nbsp; Algunas de las directivas nativas de AngularJS son:. </p>		
+								<div style="margin-left : 50px">
+										<ul>
+											<li style="list-style-type: disc"> <p>	ng-app : es la directiva nativa de Angular que arranca nuestra aplicación estableciendo el elemento raíz de la misma. </p> </li>
+											<li style="list-style-type: disc"> <p>	ng-controller :  asocia a una vista el controlador que mantiene la vinculación del modelo y gestiona los eventos de control de la misma. </p> </li>										
+											<li style="list-style-type: disc"> <p>	ng-model :  vincula una propiedad en concreto del modelo declarado en el controlador a un componente de la vista; normalmente a un componente de formulario para obtener información. </p> </li>
+											<li style="list-style-type: disc"> <p>	ngBind : esta directiva cumple la misma funcionalidad que las llaves {{}}, sin embargo, ng-bind tiene una mejor performance en cuanto a tiempo </p> </li>
+											<li style="list-style-type: disc"> <p>	btn-radio (btnRadio): es una directiva de angular-bootstrap que transforma una etiqueta en un componente de tipo radio button de bootstrap </p> </li>
+											<li style="list-style-type: disc"> <p>  ngClick : esta directiva trabaja directamente relacionado al evento click, se le puede asociar alguna funcionalidad en cuanto el usuario haga click sobre algún elemento. </p> </li>
+											<li style="list-style-type: disc"> <p>  ngRepeat: esta directiva permite iterar una colección de datos, generar un template por cada elemento de la colección y pintarlo en la vista, cada template o plantilla recibe su propio ámbito ($scope).  </p> </li>
+											<li style="list-style-type: disc"> <p>  ngShow (ng-show) | ngHide (ng-hide) : estas directivas permiten mostrar y ocultar alguna parte de la vista según la condición que le asignemos, es decir ng-show permite mostrar y ng-hide permite ocultar. </p> </li>
+										</ul>
+									</div>					
+							<br>
+							<br>
+						  <div style="float: left;">
+								<button  onclick="changeClass('HTMLLeccion2Clase3')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
+							  </button>
+						  </div>
+							<div style="float: right;">
+								<button  onclick="changeClass('HTMLLeccion2Clase5')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+							  </button>
+						  </div>
+						</div>
+					</div>
+					<!--clase5-->
+					<div class="col s10 m10 valign-wrapper clase HTMLLeccion2Clase5 hidden">
+						<div class="card lesson">
+							<h5><b> Como crear directivas personalizadas </b></h5>
+							<br>
+								<center><iframe width="600" height="450" src="https://www.youtube.com/embed/ZCox_cjSlSk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+							<br>
+							<br>
+						<div style="float: left;">
+								<button  onclick="changeClass('HTMLLeccion2Clase4')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
+							</button>
+						</div>
+							<div style="float: right;">
+								<button  onclick="changeClass('HTMLLeccion2Clase6')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+							</button>
+						</div>
+						</div>
+					</div>
+
+					<!-- Finalizar Leccion -->
+					<div class="col s10 m10 valign-wrapper clase HTMLLeccion2Clase6 hidden">
+						<div class="card lesson">
+							<center><h3><b>¡Felicitaciones!</b></h3></center>
+							<br>
+							<center><h5>Has culminado la segunda lección de AngularJS</h5></center>
+							<br>
+							<br>
+							<div style="text-align: right;">
+								<a href="./MenuLecciones.html"><button class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>Finalizar </b>
+								</button></a>
+							</div>
+						</div>
+					</div>
+		      	<div class="col s1 m1"></div>
+		    </div>
+	    </main>
+	</body>
+</html>

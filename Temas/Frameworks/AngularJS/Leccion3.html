@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
+		<script type="text/javascript" src="../../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../../js/materialize.min.js"></script>
+		<script type="text/javascript" src="../../../js/general.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="../../../css/materialize.min.css">
+		<link rel="stylesheet" href="../../../css/style.css">
+		<title> COStudent </title>
+		<link rel="icon" href="../../../img/icono.jpg" type="image/png" size="16x16">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+
+	<body  class="grey lighten-3">
+		<!-- Left Bar -->
+		<header>
+		   	<ul id="slide-out" class="sidenav sidenav-fixed grey lighten-5">
+		   		<li onclick="redirect('../../../index.html')"><img src="../../../img/logo.jpg" class="logo"></li>
+		    	<li class="no-padding">
+		        	<ul class="collapsible collapsible-accordion">
+		          		<li>
+		            		<a class="collapsible-header cian_degrade"><b>Tema 1:</b> Realización de Páginas Web</a>
+		            		<div class="collapsible-body grey lighten-5" >
+		              			<ul>
+		                			<li><a class="cian_degrade" href="../../Realizacion_paginas_web/HTML/HTMLLecciones.html"><b>1.1</b> HTML</a></li>
+		                			<li><a class="cian_degrade" href="../../Realizacion_paginas_web/CSS/Lecciones.html"><b>1.2</b> CSS</a></li>
+		                			<li><a class="cian_degrade" href="../../Realizacion_paginas_web/JS/Lecciones.html"><b>1.3</b> JavaScript</a></li>
+		              			</ul>
+		            		</div>
+		          		</li>
+		          		<li class="active" >
+		            		<a class="collapsible-header lime_degrade degrade_active"><b>Tema 2:</b> Frameworks</a>
+		            		<div class="collapsible-body grey lighten-5">
+		              			<ul>
+		                			<li><a class="lime_degrade " href="../RubyonRails/MenuLecciones.html"><b>2.1</b> Ruby on Rails</a></li>
+		                			<li><a class="lime_degrade degrade_active" href="./MenuLecciones.html"><b>2.2</b> AngularJS</a></li>		                			
+		              			</ul>
+		            		</div>
+		          		</li>
+		          		<li >
+		            		<a class="collapsible-header pink_degrade"><b>Tema 3:</b> REST APIs</a>
+		            		<div class="collapsible-body grey lighten-5">
+		              			<ul>
+		                			<li><a class="pink_degrade" href="../../REST_APIs/Creacion/MenuLecciones.html"><b>3.1</b> Creación</a></li>
+		                			<li><a class="pink_degrade" href="../../REST_APIs/Utilizacion/MenuLecciones.html"><b>3.2</b> Utilización</a></li>
+		              			</ul>
+		            		</div>
+		          		</li>
+		          		<li>
+		            		<a class="collapsible-header orange_degrade"><b>Tema 4:</b> Git y Git Flow</a>
+		            		<div class="collapsible-body grey lighten-5">
+		              			<ul>
+									<li><a class="orange_degrade" href="../../Git_y_Git_Flow/Introduccion_a_Git/MenuLecciones.html"><b>4.1</b> Introducción a Git</a></li>
+									<li><a class="orange_degrade" href="../../Git_y_Git_Flow/Git_Flow/MenuLecciones.html"><b>4.2</b> Git Flow</a></li>
+		              			</ul>
+		            		</div>
+		          		</li>
+		          		<li>
+											<a class="collapsible-header black_degrade" href="../../../Creditos.html"><b>Créditos</b></a>
+										</li>
+		        	</ul>
+		      	</li>
+		      	<footer><center><i>© 2019 Capote Orianna, Díaz Satoru, Iglesias Carlos.</i></center></footer>
+			</ul>
+		    <a href="#" data-target="slide-out" class="sidenav-trigger menuButton"><i class="material-icons">menu</i></a>
+		</header>
+
+	    <!-- Main -->
+	    <main style="height: 100%;">
+	    	<div class="row">
+	    		<div class="col s12 m12">
+	    			<center><h3 class="lessonTitle">Servicios en AngularJS - Lección 3</h3></center>
+	    		</div>
+	    	</div>
+	    	<div class="row"  style="height: 70%;">
+		      	<div class="col s1 m1"></div>
+		      	<!--clase1 -->
+		      	<div class="col s10 m10 valign-wrapper clase HTMLLeccion3Clase1">
+		      		<div class="card lesson">
+		      			<h5><b>Servicios en AngularJS</b></h5>
+								<br>								
+								<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Un servicio básicamente provee un conjunto de funciones para realizar una tarea especifica. Sin embargo En AngularJS un servicio es un objeto JavaScript que nos permite obtener información. Estos objetos tienen métodos que sirven para mantener los datos en el ciclo de vida de la aplicación y se comunican a través de los controladores de una manera consistente. </p>
+								<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Es importante saber que los servicios en AngularJS siempre son Singleton. Esto significa que una ves que AngularJS construye un objeto servicio, la misma instancia es reutilizada por toda nuestra aplicación, es decir, el objeto es reutilizable e independiente de las vistas. Esto significa que no hay dos instancias de un mismo servicio. Esto hace que los servicios sean unos grandes candidatos para compartir datos a través de múltiples componentes.  </p>
+								<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; En AngulaJS existen los servicios ya construidos, los cuales permiten interactuar consistentemente y los servicios propios o personalizados creados por el desarrollador a la medida de sus necesidades. </p>								
+								<br>
+			      		<br>
+			      		<div style="text-align: right;">
+				      		<button  onclick="changeClass('HTMLLeccion3Clase2')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+							</button>
+						</div>
+		      		</div>
+				</div>
+				
+				<!--clase2 -->
+				<div class="col s10 m10 valign-wrapper clase HTMLLeccion3Clase2 hidden">
+						<div class="card lesson">
+							<h5><b>Tipos de Servicios</b></h5>
+							<br>								
+								<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Existen dos tipos de servicios en AngularJS: </p>								
+								<div style="margin-left : 50px">
+										<ul>
+											<li style="list-style-type: disc"> <p> Constants: Una constante es un servicio al que le pasamos directamente el valor de dicho servicio. </p> </li>
+											<li style="list-style-type: disc"> <p> Value: Un valor es un servicio al que le pasamos directamente el valor de dicho servicio. </p></li>
+											<li style="list-style-type: disc"> <p> Service: El servicio recibe un parámetro una clase)JavaScript y será AngularJS el que cree internamente una instancia de la clase. </p></li>
+											<li style="list-style-type: disc"> <p> Factorias: Efectivamente es lo mismo que un servicio. Sin embargo,es más detallado y configurable, por lo cual quiero decir que te da la libertad de los Servicios de Angularjs, fábricas y proveedores determinan que instancia debe crear y devolver de la fábrica. Como su nombre indica es una fábrica para un servicio. </p></li>
+											<li style="list-style-type: disc"> <p> Provider: Un proveedor es como un factory pero permite que se configure antes de crear el valor del servicio. </p></li>											
+										</ul>
+									</div>
+							<br>
+							<br>
+						  <div style="float: left;">
+								<button  onclick="changeClass('HTMLLeccion3Clase1')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
+							  </button>
+						  </div>
+							<div style="float: right;">
+								<button  onclick="changeClass('HTMLLeccion3Clase3')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+							  </button>
+						  </div>
+						</div>
+					</div>
+				
+		      	<!--clase3 -->
+		      	<div class="col s10 m10 valign-wrapper clase HTMLLeccion3Clase3 hidden">
+		      		<div class="card lesson">
+		      		<h5><b> Tipos de Servicios </b></h5>
+			      	<br>													
+							<p>&nbsp;&nbsp;&nbsp; Acontinuación se presentan las diferencias entre los tipos de servicios: </p>	
+							<center><img src="../../../img/tabladifang.jpg" style="width: 60%"></center> 																		
+			      	<br>
+			      	<br>
+						<div style="float: left;">
+				      		<button  onclick="changeClass('HTMLLeccion3Clase2')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
+							</button>
+						</div>
+			      		<div style="float: right;">
+				      		<button  onclick="changeClass('HTMLLeccion3Clase4')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+							</button>
+						</div>
+		      		</div>
+		      	</div>
+				  <!--clase4 -->
+				  <div class="col s10 m10 valign-wrapper clase HTMLLeccion3Clase4 hidden">
+						<div class="card lesson">
+							<h5><b>Algunos servicios propios de AngulaJS</b></h5>
+							<br>
+							<p>&nbsp;&nbsp;&nbsp; Algunos de los servicios mas usados por la comunidad angular son: </p>	
+							<div style="margin-left : 50px">
+									<ul>
+										<li style="list-style-type: disc"> <p> $http </p> </li>
+										<li style="list-style-type: disc"> <p> $location </p></li>
+										<li style="list-style-type: disc"> <p> $timeout </p></li>
+										<li style="list-style-type: disc"> <p> $interval </p></li>
+										<li style="list-style-type: disc"> <p> hexafy </p></li>											
+									</ul>
+								</div>
+							<br>
+							<br>
+						  <div style="float: left;">
+								<button  onclick="changeClass('HTMLLeccion3Clase3')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
+							  </button>
+						  </div>
+							<div style="float: right;">
+								<button  onclick="changeClass('HTMLLeccion3Clase5')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+							  </button>
+						  </div>
+						</div>
+					</div>
+					<!--clase5-->
+					<div class="col s10 m10 valign-wrapper clase HTMLLeccion3Clase5 hidden">
+						<div class="card lesson">
+							<h5><b> Como crear servicios personalizados </b></h5>
+							<br>
+							<center><iframe width="600" height="400" src="https://www.youtube.com/embed/avFQwM3jmrc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>											
+							<br>
+							<br>
+						<div style="float: left;">
+								<button  onclick="changeClass('HTMLLeccion3Clase4')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
+							</button>
+						</div>
+							<div style="float: right;">
+								<button  onclick="changeClass('HTMLLeccion3Clase6')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+							</button>
+						</div>
+						</div>
+					</div>
+
+					<!-- Finalizar Leccion -->
+					<div class="col s10 m10 valign-wrapper clase HTMLLeccion3Clase6 hidden">
+						<div class="card lesson">
+							<center><h3><b>¡Felicitaciones!</b></h3></center>
+							<br>
+							<center><h5>Has culminado la tercera lección de AngularJS</h5></center>
+							<br>
+							<br>
+							<div style="text-align: right;">
+								<a href="./MenuLecciones.html"><button class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>Finalizar </b>
+								</button></a>
+							</div>
+						</div>
+					</div>
+		      	<div class="col s1 m1"></div>
+		    </div>
+	    </main>
+	</body>
+</html>
