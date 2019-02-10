@@ -75,6 +75,10 @@ footer {
   background-image: linear-gradient(to bottom right, #000000, #ffffff);
 }
 
+.creditosCard:hover {
+  cursor: pointer;
+}
+
 .cardTema1 {
   background-image: linear-gradient(to bottom right, #00bcd4, #18ffff);
   cursor: pointer;
