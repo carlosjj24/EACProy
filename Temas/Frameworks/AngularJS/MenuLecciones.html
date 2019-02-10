@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
+		<script type="text/javascript" src="../../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../../js/materialize.min.js"></script>
+		<script type="text/javascript" src="../../../js/general.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="../../../css/materialize.min.css">
+		<link rel="stylesheet" href="../../../css/style.css">
+		<title> COStudent </title>
+		<link rel="icon" href="../../../img/icono.jpg" type="image/png" size="16x16">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+
+	<body  class="grey lighten-3">
+		<!-- Left Bar -->
+		<header>
+		   	<ul id="slide-out" class="sidenav sidenav-fixed grey lighten-5">
+		   		<li onclick="redirect('../../../index.html')"><img src="../../../img/logo.jpg" class="logo"></li>
+		    	<li class="no-padding">
+		        	<ul class="collapsible collapsible-accordion">
+		          		<li>
+		            		<a class="collapsible-header cian_degrade"><b>Tema 1:</b> Realización de Páginas Web</a>
+		            		<div class="collapsible-body grey lighten-5" >
+		              			<ul>
+		                			<li><a class="cian_degrade" href="./HTMLLecciones.html"><b>1.1</b> HTML</a></li>
+		                			<li><a class="cian_degrade" href="./CSSLecciones.html"><b>1.2</b> CSS</a></li>
+		                			<li><a class="cian_degrade" href="./JSLecciones.html"><b>1.3</b> JavaScript</a></li>
+		                			<li><a class="cian_degrade" href="./BootstrapLecciones.html"><b>1.4</b> Bootstrap</a></li>
+		                			<li><a class="cian_degrade" href="./JQLecciones.html"><b>1.5</b> jQuery</a></li>
+		              			</ul>
+		            		</div>
+		          		</li>
+		          		<li class="active" >
+		            		<a class="collapsible-header lime_degrade degrade_active"><b>Tema 2:</b> Frameworks</a>
+		            		<div class="collapsible-body grey lighten-5">
+		              			<ul>
+		                			<li><a class="lime_degrade" href="../RubyonRails/MenuLecciones.html"><b>2.1</b> Ruby on Rails</a></li>
+		                			<li><a class="lime_degrade degrade_active" href="./MenuLecciones.html"><b>2.2</b> AngularJS</a></li>		                			
+		              			</ul>
+		            		</div>
+		          		</li>
+		          		<li >
+		            		<a class="collapsible-header pink_degrade"><b>Tema 3:</b> REST APIs</a>
+		            		<div class="collapsible-body grey lighten-5">
+		              			<ul>
+		                			<li><a class="pink_degrade" href="../../REST_APIs/Creacion/MenuLecciones.html"><b>3.1</b> Creación</a></li>
+		                			<li><a class="pink_degrade" href="../../REST_APIs/Utilizacion/MenuLecciones.html"><b>3.2</b> Utilización</a></li>
+		              			</ul>
+		            		</div>
+		          		</li>
+		          		<li>
+		            		<a class="collapsible-header orange_degrade"><b>Tema 4:</b> Git y Git Flow</a>
+		            		<div class="collapsible-body grey lighten-5">
+		              			<ul>
+									<li><a class="orange_degrade" href="../../Git_y_Git_Flow/Introduccion_a_Git/MenuLecciones.html"><b>4.1</b> Introducción a Git</a></li>
+									<li><a class="orange_degrade" href="../../Git_y_Git_Flow/Git_Flow/MenuLecciones.html"><b>4.2</b> Git Flow</a></li>
+		              			</ul>
+		            		</div>
+		          		</li>
+		          		<li>
+		            		<a class="collapsible-header black_degrade" href="./Creditos.html"><b>Créditos</b></a>
+		          		</li>
+		        	</ul>
+		      	</li>
+		      	<footer><center><i>© 2019 Capote Orianna, Díaz Satoru, Iglesias Carlos.</i></center></footer>
+			</ul>
+		    <a href="#" data-target="slide-out" class="sidenav-trigger menuButton"><i class="material-icons">menu</i></a>
+		</header>
+
+	    <!-- Main -->
+	    <main>
+	    	<div class="row">
+	    		<div class="col s12 m12">
+	    			<center><h3 class="lessonTitle">Creación</h3></center>
+	    		</div>
+	    	</div>
+	    	<div style="padding: 50px; padding-top: 30px;">
+		    	<div class="row">
+		    		<div class="col s12 m4">
+		    			<div class="card cardTema2" onclick="redirect('Leccion1.html')">
+				        	<div class="card-content">
+				          		<center><span class="card-title">Lección 1</span></center>
+				        	</div>
+				        	<div class="card-action inicioClasesCard-action">
+					          	<p><b>API REST: Conceptos basicos y ventajas de su utilizacion</b></p>
+					        </div>
+				      	</div>
+		    		</div>
+		    		<div class="col s12 m4">
+		    			<div class="card cardTema2" onclick="redirect('Leccion2.html')">
+				        	<div class="card-content">
+				          		<center><span class="card-title">Lección 2</span></center>
+				        	</div>
+				        	<div class="card-action inicioClasesCard-action">
+					          	<center><p><b> ¿Como Funciona API REST? </b></p></center>
+					        </div>
+				      	</div>
+		    		</div>
+		    		<div class="col s12 m4">
+		    			<div class="card cardTema2" onclick="redirect('Leccion3.html')">
+				        	<div class="card-content">
+				          		<center><span class="card-title">Lección 3</span></center>
+				        	</div>
+				        	<div class="card-action inicioClasesCard-action">
+					          	<p><b>A continuación, estudiaremos algunas API REST</b></p>
+					        </div>
+				      	</div>
+		    		</div>
+		    	</div>
+		    </div>
+	    </main>
+	</body>
+</html>
