@@ -90,7 +90,7 @@
                 <br>
 			      		<br>
 			      		<div style="text-align: right;">
-				      		<button  onclick="changeClass('HTMLLeccion3Clase2')" class="btn waves-effect waves-light pink accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+				      		<button  onclick="changeClass('HTMLLeccion3Clase2')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
 							</button>
 						</div>
 		      		</div>
@@ -98,44 +98,42 @@
 
 
 				<!--clase1.1 -->
-				<div class="col s10 m10 valign-wrapper clase HTMLLeccion3Clase2">
+				<div class="col s10 m10 valign-wrapper clase HTMLLeccion3Clase2 hidden" >
 						<div class="card lesson">
 							<h5><b>¿Cual es el proposito de un controlador?</b></h5>
 							<br>
 							<p> Rails creará una serie de archivos y añadirá una ruta por ti. </p>
-							<center> <img> </center>
+							<center><img src="../../../img/rutasrails.png" style="width: 40%"></center> 
 							<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Los archivos más importantes de éstos son por supuesto el controlador, que se encuentra en app/controllers/welcome_controller.rb y la vista, que se encuentra en app/views/welcome/index.html.erb. Abre el archivo app/views/welcome/index.html.erb en tu editor de texto y edítalo para que contenga sólo está línea de código: </p>
 							<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  • ¡Hola mundo! </p>
 							<br>
 							<br>
 							<div style="float: left;">
-									<button  onclick="changeClass('HTMLLeccion3Clase1')" class="btn waves-effect waves-light pink accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
+									<button  onclick="changeClass('HTMLLeccion3Clase1')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
 									</button>
 								</div>
 								<div style="float: right;">
-									<button  onclick="changeClass('HTMLLeccion3Clase3')" class="btn waves-effect waves-light pink accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+									<button  onclick="changeClass('HTMLLeccion3Clase3')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
 									</button>
 								</div>
 						</div>
 			</div>
-
-
 				
 				<!--clase2 -->
 				<div class="col s10 m10 valign-wrapper clase HTMLLeccion3Clase3 hidden">
 						<div class="card lesson">
 							<h5><b>¿Cual es el proposito de una vista? </b></h5>
 							<br>								
-								<p> El propósito de una vista es mostrar la información en un formato legible para los humanos. Una distinción importante que hacer es que es el controlador, y no la vista, donde la información es recolectada. La vista sólo debería mostrar la información. Por defecto, las plantillas de las vistas están escritas en un lenguaje llamado ERB (del inglés, Embedded Ruby), que se procesa automáticamente para cada petición servida por Rails. </p>
-								<center><img src="../../../img/rutasrails.png" style="width: 70%"></center> 
+								<p> &nbsp;&nbsp;&nbsp; El propósito de una vista es mostrar la información en un formato legible para los humanos. Una distinción importante que hacer es que es el controlador, y no la vista, donde la información es recolectada. La vista sólo debería mostrar la información. Por defecto, las plantillas de las vistas están escritas en un lenguaje llamado ERB (del inglés, Embedded Ruby), que se procesa automáticamente para cada petición servida por Rails. </p>								
+								<p> &nbsp;&nbsp;&nbsp; Los archivos más importantes de éstos son por supuesto el controlador, que se encuentra en app/controllers/welcome_controller.rb y la vista, que se encuentra en app/views/welcome/index.html.erb. Abre el archivo app/views/welcome/index.html.erb en tu editor de texto y edítalo para que contenga sólo "¡Hola Mundo!" dentro de una etiqueta h1. </p>
 							<br>
 							<br>
 						  <div style="float: left;">
-								<button  onclick="changeClass('HTMLLeccion3Clase2')" class="btn waves-effect waves-light pink accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
+								<button  onclick="changeClass('HTMLLeccion3Clase2')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
 							  </button>
 						  </div>
 							<div style="float: right;">
-								<button  onclick="changeClass('HTMLLeccion3Clase4')" class="btn waves-effect waves-light pink accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+								<button  onclick="changeClass('HTMLLeccion3Clase4')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
 							  </button>
 						  </div>
 						</div>
@@ -144,24 +142,28 @@
 		      	<!--clase3 -->
 		      	<div class="col s10 m10 valign-wrapper clase HTMLLeccion3Clase4 hidden">
 		      		<div class="card lesson">
-		      			<h5><b>¿Que es Rails? </b></h5>
+		      			<h5><b>Establecemos la página principal </b></h5>
 			      		<br>						
-							<p>&nbsp;&nbsp;&nbsp; Rails es un framework para el desarrollo de aplicaciones web, software libre por naturaleza, está basado en el patrón de diseño Modelo Vista Controlador (MVC). Fue creado por David Heinemeier Hansson, empleado de la empresa 37signals. </p>
-							<p>&nbsp;&nbsp;&nbsp; Fue liberado por primera vez al público en julio del 2004, y lo implemento en una aplicación orientada a la administración de proyectos llamada Basecamp. Rails está basado en estos principios de desarrollo: </p>										
+							<p>&nbsp;&nbsp;&nbsp; Ahora que hemos hecho el controlador y la vista, necesitamos decirle a Rails cuándo queremos que se muestre "¡Hola Mundo!" En nuestro caso, deseamos mostrarlo al acceder a la portada de nuestro sitio, http://localhost:3000. </p>
 							<div style="margin-left : 50px">
 									<ul>
-										<li style="list-style-type: disc"> <p>	Don’t Repeat Yourself </p> </li>
-										<li style="list-style-type: disc"> <p>	Convention Over Configuration  </p></li>									
+										<li style="list-style-type: disc"> <p> Se debe borrar el archivo index.html ubicado dentro de la carpeta public de la aplicación  </p> </li>
+										<li style="list-style-type: disc"> <p> Luego, se le debe indicar a Rails donde está ubicada la página principal. Para ello, abre el archivo config/routes en tu editor:  </p></li>									
+										<div style="margin-left : 50px">
+												<ul>
+													<li> <p> Blog::Application.routes.draw do get "welcome/index" </p> </li>												
+												</ul>
+											</div>
 									</ul>
 								</div>
 			      		<br>
 			      		<br>
 						<div style="float: left;">
-				      		<button  onclick="changeClass('HTMLLeccion3Clase5')" class="btn waves-effect waves-light pink accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
+				      		<button  onclick="changeClass('HTMLLeccion3Clase5')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
 							</button>
 						</div>
 			      		<div style="float: right;">
-				      		<button  onclick="changeClass('HTMLLeccion3Clase6')" class="btn waves-effect waves-light pink accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+				      		<button  onclick="changeClass('HTMLLeccion3Clase6')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
 							</button>
 						</div>
 		      		</div>
@@ -169,70 +171,39 @@
 				  <!--clase4 -->
 				  <div class="col s10 m10 valign-wrapper clase HTMLLeccion3Clase6 hidden">
 						<div class="card lesson">
-							<h5><b>Primer principio: Don’t Repeat Yourself</b></h5>
+							<h5><b>Establecemos la página principal</b></h5>
 							<br>
-								<p>&nbsp;&nbsp;&nbsp; No lo vuelvas a repetir”, es una de las cosas más novedosas funcionalidades de este framework. Imagina tener un formulario, y llamarlo las veces que se desee y desde cualquier lugar del codigo, simplemente con una línea código, pues ese deseo lo vuelve real Rails.  </p>
-								<p>&nbsp;&nbsp;&nbsp; Tener una tabla en tu base de datos, y manipular a los registros como un objeto y a sus campos como un atributo, sin necesidad de declarar nada, son sólo algunas aplicaciones de este principio de desarrollo. </p>  
+								<p>&nbsp;&nbsp;&nbsp; Éste es el archivo de enrutamiento de tu aplicación, que mantiene entradas con un DSL especial (domain-specific language) que le dicen a Rails cómo conectar peticiones entrantes a controladores y acciones. Este archivo contiene muchas rutas de ejemplo en líneas comentadas, y una de ellas en realidad muestra como conectar la raíz de tu sitio a un controlador y acción específicos. Encuentra la línea iniciando con root :to y descoméntala. Debería verse como lo siguiente: </p>
+								<div style="margin-left : 50px">
+										<ul>
+											<li> <p> root :to => "welcome#index" </p> </li>												
+										</ul>
+									</div>
+									<p>&nbsp;&nbsp;&nbsp; El root :to => "welcome#index" le indica a Rails que debe asociar las peticiones de la raíz de la aplicación a la acción index del controlador welcome y get "welcome/index" le indica a Rails que asocie peticiones de http://localhost:3000/welcome/index a la acción index del controlador welcome. Este fue creado al inicio cuando ejecutaste el generador del controlador (rails generate controller welcome index). </p>
+								<p>&nbsp;&nbsp;&nbsp; Si accedes a la dirección http://localhost:3000 en tu navegador, verás el mensaje ¡Hola Mundo! que colocaste dentro de la vista app/views/welcome/index.html.erb, indicando que esta nueva ruta está en realidad pasando a la acción index del controlador Welcome y está renderizando la vista correctamente. </p>  
 							<br>
 							<br>
 						  <div style="float: left;">
-								<button  onclick="changeClass('HTMLLeccion3Clase5')" class="btn waves-effect waves-light pink accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
+								<button  onclick="changeClass('HTMLLeccion3Clase5')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
 							  </button>
 						  </div>
 							<div style="float: right;">
-								<button  onclick="changeClass('HTMLLeccion3Clase7')" class="btn waves-effect waves-light pink accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+								<button  onclick="changeClass('HTMLLeccion3Clase7')" class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
 							  </button>
 						  </div>
 						</div>
 					</div>
-					<!--clase5-->
-					<div class="col s10 m10 valign-wrapper clase HTMLLeccion3Clase7 hidden">
-						<div class="card lesson">
-							<h5><b>Segundo Principio: Convention Over Configuration </b></h5>
-							<br>
-								<p>&nbsp;&nbsp;&nbsp; “Convención antes que Configuración”, Rails trae todo configurado por defecto ayudando al programador a ahorrar tiempo, si el programador así lo desea puede desconfigurar o cambiar la configuración, pero en principio si lo necesita ya estará configurado. </p>  
-							<br>
-							<br>
-						<div style="float: left;">
-								<button  onclick="changeClass('HTMLLeccion3Clase6')" class="btn waves-effect waves-light pink accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
-							</button>
-						</div>
-							<div style="float: right;">
-								<button  onclick="changeClass('HTMLLeccion3Clase8')" class="btn waves-effect waves-light pink accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
-							</button>
-						</div>
-						</div>
-					</div>
-
-						<!--clase6-->
-						<div class="col s10 m10 valign-wrapper clase HTMLLeccion3Clase8 hidden">
-								<div class="card lesson">
-									<h5><b> ¿Qué es Ruby on Rails? </b></h5>
-									<br>
-										<p>&nbsp;&nbsp;&nbsp; Ruby on Rails es un entorno de desarrollo web de código abierto que está optimizado para la satisfacción de los programadores y para la productividad sostenible. Te permite escribir un buen código evitando que te repitas y favoreciendo la convención antes que la configuración. </p>  
-									<br>
-									<br>
-								<div style="float: left;">
-										<button  onclick="changeClass('HTMLLeccion3Clase7')" class="btn waves-effect waves-light pink accent-1 black-text" type="submit" name="action"><b>< Anterior </b>
-									</button>
-								</div>
-									<div style="float: right;">
-										<button  onclick="changeClass('HTMLLeccion3Clase9')" class="btn waves-effect waves-light pink accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
-									</button>
-								</div>
-								</div>
-							</div>
 
 					<!-- Finalizar Leccion -->
-					<div class="col s10 m10 valign-wrapper clase HTMLLeccion3Clase9 hidden">
+					<div class="col s10 m10 valign-wrapper clase HTMLLeccion3Clase7 hidden">
 						<div class="card lesson">
 							<center><h3><b>¡Felicitaciones!</b></h3></center>
 							<br>
-							<center><h5>Has culminado la primera lección de Conceptos basicos de Ruby on Rails</h5></center>
+							<center><h5>Ya estas listo(a) para hacer por ti mismo(a) tu "Hola Mundo" en RoR, ¡Adelante pon en practica lo aprendido! </h5></center>
 							<br>
 							<br>
 							<div style="text-align: right;">
-								<a href="./MenuLecciones.html"><button class="btn waves-effect waves-light pink accent-1 black-text" type="submit" name="action"><b>Finalizar </b>
+								<a href="./MenuLecciones.html"><button class="btn waves-effect waves-light lime accent-1 black-text" type="submit" name="action"><b>Finalizar </b>
 								</button></a>
 							</div>
 						</div>
