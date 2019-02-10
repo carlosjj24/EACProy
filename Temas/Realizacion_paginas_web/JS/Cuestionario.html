@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
+		<script type="text/javascript" src="../../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../../js/materialize.min.js"></script>
+		<script type="text/javascript" src="../../../js/general.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="../../../css/materialize.min.css">
+		<link rel="stylesheet" href="../../../css/style.css">
+		<title> COStudent </title>
+		<link rel="icon" href="../../../img/icono.jpg" type="image/png" size="16x16">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+
+	<body  class="grey lighten-3" style="height: 100%">
+		<!-- Left Bar -->
+		<header>
+		   	<ul id="slide-out" class="sidenav sidenav-fixed grey lighten-5">
+		   		<li onclick="redirect('../../../index.html')"><img src="../../../img/logo.jpg" class="logo"></li>
+		    	<li class="no-padding">
+		        	<ul class="collapsible collapsible-accordion">
+		          		<li class="active">
+		            		<a class="collapsible-header cian_degrade degrade_active"><b>Tema 1:</b> Realización de Páginas Web</a>
+		            		<div class="collapsible-body grey lighten-5" >
+		              			<ul>
+		                			<li><a class="cian_degrade" href="../HTML/HTMLLecciones.html"><b>1.1</b> HTML</a></li>
+		                			<li><a class="cian_degrade" href="../CSS/Lecciones.html"><b>1.2</b> CSS</a></li>
+		                			<li><a class="cian_degrade degrade_active" href="./Lecciones.html"><b>1.3</b> JavaScript</a></li>
+		              			</ul>
+		            		</div>
+		          		</li>
+		          		<li>
+								<a class="collapsible-header lime_degrade"><b>Tema 2:</b> Frameworks</a>
+								<div class="collapsible-body grey lighten-5">
+									  <ul>
+										<li><a class="lime_degrade" href="../../Frameworks/RubyonRails/MenuLecciones.html"><b>2.1</b> Ruby on Rails</a></li>
+										<li><a class="lime_degrade" href="../../Frameworks/AngularJS/MenuLecciones.html"><b>2.2</b> AngularJS </a></li>		                			
+									  </ul>
+								</div>
+							  </li>
+							  <li>
+								<a class="collapsible-header pink_degrade"><b>Tema 3:</b> REST APIs</a>
+								<div class="collapsible-body grey lighten-5">
+									  <ul>
+										<li><a class="pink_degrade" href="../../REST_APIs/Creacion/MenuLecciones.html"><b>3.1</b> Creación</a></li>
+										<li><a class="pink_degrade" href="../../REST_APIs/Utilizacion/MenuLecciones.html"><b>3.2</b> Utilización</a></li>
+									  </ul>
+								</div>
+							  </li>
+		          		<li>
+		            		<a class="collapsible-header orange_degrade"><b>Tema 4:</b> Git y Git Flow</a>
+		            		<div class="collapsible-body grey lighten-5">
+		              			<ul>
+									<li><a class="orange_degrade" href="../../Git_y_Git_Flow/Introduccion_a_Git/MenuLecciones.html"><b>4.1</b> Introducción a Git</a></li>
+									<li><a class="orange_degrade" href="../../Git_y_Git_Flow/Git_Flow/MenuLecciones.html"><b>4.2</b> Git Flow</a></li>
+		              			</ul>
+		            		</div>
+		          		</li>
+		          		<li>
+		            		<a class="collapsible-header black_degrade" href="../../../Creditos.html"><b>Créditos</b></a>
+		          		</li>
+		        	</ul>
+		      	</li>
+		      	<footer><center><i>© 2019 Capote Orianna, Díaz Satoru, Iglesias Carlos.</i></center></footer>
+			</ul>
+		    <a href="#" data-target="slide-out" class="sidenav-trigger menuButton"><i class="material-icons">menu</i></a>
+		</header>
+
+	    <!-- Main -->
+	    <main style="height: 100%;">
+	    	<div class="row">
+	    		<div class="col s12 m12">
+	    			<center><h3 class="lessonTitle">HTML - Cuestionario</h3></center>
+	    		</div>
+	    	</div>
+	    	<div class="row"  style="height: 70%; position: relative;">
+		      	<div class="col s1 m1"></div>
+		      	<!--clase1 -->
+		      	<div class="col s10 m10 valign-wrapper clase HTMLLeccion1Clase1">
+		      		<div class="card lesson">
+		      			<h5><b>¿Qué significa JSON?</b> 1/3</h5>
+			      		<br>
+			      		<form action="#">
+						    <p>
+						      	<label>
+						        	<input name="pregunta1" type="radio" value="1" />
+						        	<span class="black-text">JavaScript Object Navigation.</span>
+						      	</label>
+						    </p>
+						    <p>
+						      	<label>
+						        	<input name="pregunta1" type="radio" value="2" />
+						        	<span class="black-text">JavaScript Object Notation.</span>
+						      	</label>
+						    </p>
+						    <p>
+						      	<label>
+						        	<input name="pregunta1" type="radio" value="3" />
+						        	<span class="black-text">JavaScript Open Notation.</span>
+						      	</label>
+						    </p>
+						    <p>
+						      	<label>
+						        	<input name="pregunta1" type="radio" value="4" />
+						        	<span class="black-text">JavaScript Open Navigation.</span>
+						      	</label>
+						    </p>
+						</form>
+			      		<br>
+			      		<br>
+			      		<div style="text-align: right;">
+				      		<button  onclick="sigCuestionario('no','pregunta1', '2' ,'HTMLLeccion1Clase2')" class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+							</button>
+						</div>
+		      		</div>
+		      	</div>
+		      	<!--clase2 -->
+		      	<div class="col s10 m10 valign-wrapper clase HTMLLeccion1Clase2 hidden">
+		      		<div class="card lesson">
+		      			<h5><b>¿Qué evento permite detectar cuando el mouse se encuentra sobre un elemento HTML?</b> 2/3</h5>
+			      		<br>
+			      		<form action="#">
+						    <p>
+						      	<label>
+						        	<input name="pregunta2" type="radio" value="1" />
+						        	<span class="black-text">hover</span>
+						      	</label>
+						    </p>
+						    <p>
+						      	<label>
+						        	<input name="pregunta2" type="radio" value="2" />
+						        	<span class="black-text">moseover</span>
+						      	</label>
+						    </p>
+						    <p>
+						      	<label>
+						        	<input name="pregunta2" type="radio" value="3" />
+						        	<span class="black-text">onmouseover</span>
+						      	</label>
+						    </p>
+						    <p>
+						      	<label>
+						        	<input name="pregunta2" type="radio" value="4" />
+						        	<span class="black-text">over</span>
+						      	</label>
+						    </p>
+						</form>
+			      		<br>
+			      		<br>
+			      		<div style="text-align: right;">
+				      		<button  onclick="sigCuestionario('no','pregunta2', '3' ,'HTMLLeccion1Clase3')" class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+							</button>
+						</div>
+		      		</div>
+		      	</div>
+		      	<!--clase3 -->
+		      	<div class="col s10 m10 valign-wrapper clase HTMLLeccion1Clase3 hidden">
+		      		<div class="card lesson">
+		      			<h5><b>¿Cuál es el nombre de la etiqueta utilizada para enlazar un archivo JS a un documento HTML?</b> 3/3</h5>
+			      		<br>
+			      		<form action="#">
+						    <p>
+						      	<label>
+						        	<input name="pregunta3" type="radio" value="1" />
+						        	<span class="black-text"> script</span>
+						      	</label>
+						    </p>
+						    <p>
+						      	<label>
+						        	<input name="pregunta3" type="radio" value="2" />
+						        	<span class="black-text"> link</span>
+						      	</label>
+						    </p>
+						    <p>
+						      	<label>
+						        	<input name="pregunta3" type="radio" value="3" />
+						        	<span class="black-text"> head</span>
+						      	</label>
+						    </p>
+						    <p>
+						      	<label>
+						        	<input name="pregunta3" type="radio" value="4" />
+						        	<span class="black-text"> html </span>
+						      	</label>
+						    </p>
+						</form>
+			      		<br>
+			      		<br>
+			      		<div style="text-align: right;">
+				      		<button  onclick="sigCuestionario('si','pregunta3', '1' ,'')" class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>Siguiente > </b>
+							</button>
+						</div>
+		      		</div>
+		      	</div>
+		      	<!-- perfecto -->
+		      	<div class="col s10 m10 valign-wrapper clase cuestionarioPerfecto hidden">
+		      		<div class="card lesson">
+		      			<center><h3><b>¡Perfecto!</b></h3></center>
+			      		<br>
+			      		<center><h5>Has completado el cuestionario HTML sin equivocarte. No olvides continuar practicando para no olvidar lo aprendido.</h5></center>
+			      		<br>
+			      		<br>
+			      		<div style="text-align: right;">
+				      		<a href="./Lecciones.html"><button class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>Finalizar </b>
+							</button></a>
+						</div>
+		      		</div>
+		      	</div>
+		      	<!-- regular -->
+		      	<div class="col s10 m10 valign-wrapper clase cuestionarioRegular hidden">
+		      		<div class="card lesson">
+		      			<center><h3><b>No está mal</b></h3></center>
+			      		<br>
+			      		<center><h5 id="mensajeRegular">No lo has hecho mal, sin embargo te recomendamos reforzar las lecciones vistas. <br>
+			      		Respuestas Erroneas = </h5></center>
+			      		<br>
+			      		<br>
+			      		<div style="text-align: right;">
+				      		<a href="./Lecciones.html"><button class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>Finalizar </b>
+							</button></a>
+						</div>
+		      		</div>
+		      	</div>
+		      	<!-- Cuestionario Mal -->
+		      	<div class="col s10 m10 valign-wrapper clase cuestionarioMal hidden">
+		      		<div class="card lesson">
+		      			<center><h3><b>Creemos que no has aprendido lo que se deseaba</b></h3></center>
+			      		<br>
+			      		<center><h5 id="mensajeRegular">Más de la mitad de tus respuestas han sido erroneas, te recomendamos volver a estudiar todas las lecciones. </h5></center>
+			      		<br>
+			      		<br>
+			      		<div style="text-align: right;">
+				      		<a href="./Lecciones.html"><button class="btn waves-effect waves-light cyan accent-1 black-text" type="submit" name="action"><b>Finalizar </b>
+							</button></a>
+						</div>
+		      		</div>
+		      	</div>
+		      	<div class="col s1 m1"></div>
+		    </div>
+	    </main>
+	</body>
+</html>
